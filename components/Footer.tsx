@@ -39,17 +39,19 @@ export default function Footer() {
             <p className="text-accent text-[0.6875rem] tracking-[0.25em] uppercase mb-5">
               Navigate
             </p>
-            {['#services', '#prices', '#team', '#locations'].map((href) => (
-              <a
+            {[
+              { label: 'Services', href: '/services' },
+              { label: 'Pricing', href: '/services#prices' },
+              { label: 'Our Team', href: '/team' },
+              { label: 'Locations', href: '/locations' },
+            ].map(({ label, href }) => (
+              <Link
                 key={href}
                 href={href}
                 className="block text-muted text-sm no-underline mb-[0.625rem] font-light transition-colors duration-200 hover:text-text"
               >
-                {href
-                  .replace('#', '')
-                  .replace('-', ' ')
-                  .replace(/\b\w/g, (c) => c.toUpperCase())}
-              </a>
+                {label}
+              </Link>
             ))}
             <Link
               href="/book"

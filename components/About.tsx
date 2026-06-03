@@ -36,9 +36,10 @@ export default function About() {
 
             <div className="max-w-[54ch]">
               <p className="text-muted text-base leading-[1.85] font-light mb-6">
-                Our family has been in barbering since 1995, with roots in Beirut and Erbil. Saad,
-                the eldest son, moved to Finland in 2009 and opened the first Damask location in
-                Kannelmäki in 2016 — bringing a craft shaped over generations.
+                We are a Kurdish family from Syria. Our family has been in barbering since 1995,
+                with experience built across Beirut and Erbil. Saad, the eldest son, moved to
+                Finland in 2009 and opened the first Damask location in Kannelmäki in 2016 —
+                bringing a craft shaped over generations.
               </p>
               <p className="text-muted text-base leading-[1.85] font-light">
                 What started as one chair has grown into five locations across the Helsinki
