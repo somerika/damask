@@ -8,7 +8,7 @@ import { useLanguage } from '@/lib/language-context'
 const content = {
   en: {
     eyebrow: 'What We Do',
-    h2: ['Expert Craft,', 'Every Time.'],
+    h2: ['Sharp cuts.', 'Done right.'],
     book: 'Book Now',
     viewPricing: 'View pricing →',
     services: [
@@ -17,27 +17,27 @@ const content = {
         title: 'Haircut',
         price: 'From €25',
         description:
-          'Precision scissors and clipper work shaped to your face and style. Whether you want a classic cut or something contemporary, our barbers read the brief and deliver.',
+          'Scissors and clipper work tailored to your face shape and personal style. Classic or contemporary — we take our time and get it right.',
       },
       {
         number: '02',
         title: 'Beard & Shave',
         price: 'From €10',
         description:
-          'Beard shaping, machine shave, or a traditional blade shave with hot towel. Controlled edges, clean lines — the kind of detail that makes the whole look.',
+          'Beard shaping, machine shave, or a traditional blade shave with a hot towel. Sharp edges, clean lines — the finishing touch that ties the whole look together.',
       },
       {
         number: '03',
         title: 'Color & Style',
         price: 'From €40',
         description:
-          'Hair coloring, highlights, straightening, and hair tattoo designs. Full transformation services handled by barbers who know their craft inside out.',
+          'Hair coloring, highlights, straightening, and hair tattoo designs. Full color and styling services done by experienced barbers who know what they are doing.',
       },
     ],
   },
   fi: {
     eyebrow: 'Mitä teemme',
-    h2: ['Huippuosaamista –', 'joka kerta.'],
+    h2: ['Tarkkaa työtä.', 'Aina.'],
     book: 'Varaa aika',
     viewPricing: 'Katso hinnasto →',
     services: [
@@ -46,21 +46,21 @@ const content = {
         title: 'Hiustenleikkaus',
         price: 'Alkaen €25',
         description:
-          'Tarkkaa saksi- ja koneleikkaustyötä, muotoiltu kasvojesi ja tyylisi mukaan. Halusitpa klassisen leikkauksen tai jotain modernimpaa – parturimme lukevat briifin ja toimittavat.',
+          'Saksi- ja koneleikkaustyötä kasvojesi muodon ja tyylisi mukaan. Klassinen tai moderni – otamme aikamme ja teemme sen kunnolla.',
       },
       {
         number: '02',
         title: 'Parta & Ajelu',
         price: 'Alkaen €10',
         description:
-          'Parranmuotoilua, koneajelua tai perinteistä teräajelua kuumalla pyyhkeellä. Tarkat rajat, puhtaat linjat – sellainen yksityiskohta, joka viimeistelee koko ilmeen.',
+          'Parranmuotoilua, koneajelua tai perinteistä teräajelua kuumalla pyyhkeellä. Tarkat rajat, puhtaat linjat – viimeistely, joka sitoo koko ilmeen yhteen.',
       },
       {
         number: '03',
         title: 'Väri & Tyyli',
         price: 'Alkaen €40',
         description:
-          'Hiusten värjäystä, raitoja, suoristusta ja hiustatuointeja. Täysiä muutospalveluita ammattilaispartureilta, jotka tuntevat alansa läpikotaisin.',
+          'Hiusten värjäystä, raitoja, suoristusta ja hiustatuointeja. Täydet väri- ja tyylittelypalvelut kokeneilta partureilta, jotka tietävät mitä tekevät.',
       },
     ],
   },

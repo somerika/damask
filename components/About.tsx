@@ -12,7 +12,7 @@ const content = {
     p2: 'What started as one chair has grown into five locations across the Helsinki metropolitan area. The standard has stayed the same: expert hands, patient craft, and genuine care for every person who sits in the chair.',
     stats: [
       { year: '1995', label: 'Family trade begins' },
-      { year: '2016', label: 'Helsinki opens' },
+      { year: '2016', label: 'First shop opens' },
       { year: '5', label: 'Locations today' },
     ],
   },
@@ -23,7 +23,7 @@ const content = {
     p2: 'Yhdestä tuolista on kasvanut viisi toimipistettä Helsingin metropolialueella. Standardi on pysynyt samana: taitavat kädet, kärsivällinen työ ja aito välittäminen jokaisesta asiakkaasta.',
     stats: [
       { year: '1995', label: 'Perheen parturiura alkaa' },
-      { year: '2016', label: 'Helsinki avataan' },
+      { year: '2016', label: 'Ensimmäinen liike avataan' },
       { year: '5', label: 'Toimipistettä tänään' },
     ],
   },

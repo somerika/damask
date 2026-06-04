@@ -7,7 +7,7 @@ import { useLanguage } from '@/lib/language-context'
 
 const content = {
   en: {
-    eyebrow: 'Reservation',
+    eyebrow: 'Booking',
     h1: ['Choose Your', 'Location.'],
     description:
       'Select the Damask location nearest to you. Each button opens our booking system — pick your barber, date, and service.',
@@ -16,7 +16,7 @@ const content = {
     callNote: 'Prefer to call? All locations are reachable by phone during opening hours.',
   },
   fi: {
-    eyebrow: 'Varaus',
+    eyebrow: 'Ajanvaraus',
     h1: ['Valitse', 'toimipiste.'],
     description:
       'Valitse lähin Damask-toimipiste. Jokainen nappi avaa varausjärjestelmämme – valitse parturisi, päivämäärä ja palvelu.',

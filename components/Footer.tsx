@@ -8,7 +8,7 @@ import { useLanguage } from '@/lib/language-context'
 const content = {
   en: {
     description:
-      'Expert barbering since 2016. Five locations across Helsinki, Vantaa and Espoo — a family trade delivered with precision.',
+      'Expert barbering since 2016. Five locations across Helsinki, Vantaa and Espoo — family run, done right.',
     navigate: 'Navigate',
     links: [
       { label: 'Services', href: '/services' },
@@ -22,7 +22,7 @@ const content = {
   },
   fi: {
     description:
-      'Ammattitaitoista parturityötä vuodesta 2016. Viisi toimipistettä Helsingissä, Vantaalla ja Espoossa – sukupolvien taito tarjottuna täsmällisesti.',
+      'Ammattitaitoista parturityötä vuodesta 2016. Viisi toimipistettä Helsingissä, Vantaalla ja Espoossa – perheyritys, tehty kunnolla.',
     navigate: 'Navigoi',
     links: [
       { label: 'Palvelut', href: '/services' },
