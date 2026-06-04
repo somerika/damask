@@ -53,7 +53,7 @@ export default function Nav() {
             alt="Damask"
             width={84}
             height={84}
-            className="object-contain"
+            className="object-contain w-24 h-24 md:w-[84px] md:h-[84px]"
             style={{ filter: 'brightness(0) invert(1)' }}
           />
         </Link>

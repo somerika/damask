@@ -156,7 +156,7 @@ export default function Locations() {
                   href={loc.timmaUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block self-start justify-self-start border border-border text-text px-6 py-[0.625rem] text-xs tracking-[0.1em] uppercase no-underline whitespace-nowrap transition-colors duration-200 hover:border-accent hover:text-accent"
+                  className="inline-block self-start justify-self-start bg-accent text-bg px-6 py-[0.625rem] text-xs tracking-[0.1em] uppercase no-underline whitespace-nowrap font-medium transition-opacity duration-200 hover:opacity-80"
                 >
                   Book here →
                 </a>
