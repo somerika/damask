@@ -4,10 +4,50 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
 import { LOCATIONS } from '@/lib/locations'
+import { useLanguage } from '@/lib/language-context'
+
+const content = {
+  en: {
+    eyebrow: 'Find Us',
+    h2: ['Five Locations.', 'One Standard.'],
+    book: 'Book Now',
+    journeyEyebrow: 'Our Journey',
+    timeline: [
+      { year: '1995', label: 'Family trade begins in Beirut', active: false },
+      { year: '2009', label: 'Saad moves to Finland', active: false },
+      { year: '2016', label: '1st location — Kannelmäki', active: true },
+      { year: '2018', label: '2nd location — Kivistö', active: true },
+      { year: '2019', label: '3rd location — Kallio', active: true },
+      { year: '2022', label: '4th location — Kruunuvuorenranta', active: true },
+      { year: '2024', label: '5th location — Otaniemi', active: true },
+    ],
+    bookHere: 'Book here →',
+    comingSoon: 'Coming soon',
+  },
+  fi: {
+    eyebrow: 'Löydä meidät',
+    h2: ['Viisi toimipistettä.', 'Yksi standardi.'],
+    book: 'Varaa aika',
+    journeyEyebrow: 'Matkamme',
+    timeline: [
+      { year: '1995', label: 'Perheen parturiura alkaa Beirutissa', active: false },
+      { year: '2009', label: 'Saad muuttaa Suomeen', active: false },
+      { year: '2016', label: '1. toimipiste — Kannelmäki', active: true },
+      { year: '2018', label: '2. toimipiste — Kivistö', active: true },
+      { year: '2019', label: '3. toimipiste — Kallio', active: true },
+      { year: '2022', label: '4. toimipiste — Kruunuvuorenranta', active: true },
+      { year: '2024', label: '5. toimipiste — Otaniemi', active: true },
+    ],
+    bookHere: 'Varaa tästä →',
+    comingSoon: 'Tulossa pian',
+  },
+}
 
 export default function Locations() {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
+  const { lang } = useLanguage()
+  const t = content[lang]
 
   return (
     <section id="locations" ref={ref} className="bg-bg border-t border-border">
@@ -15,7 +55,6 @@ export default function Locations() {
         className="max-w-[1400px] mx-auto"
         style={{ padding: 'clamp(4rem, 8vw, 7rem) clamp(1.25rem, 4vw, 3rem)' }}
       >
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -26,23 +65,23 @@ export default function Locations() {
             <div className="flex items-center gap-3 mb-5">
               <div className="w-7 h-px bg-accent" />
               <span className="text-accent text-[0.6875rem] tracking-[0.3em] uppercase">
-                Find Us
+                {t.eyebrow}
               </span>
             </div>
             <h2
               className="font-display font-extrabold uppercase tracking-[-0.01em] leading-[0.92] text-text"
               style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}
             >
-              Five Locations.
+              {t.h2[0]}
               <br />
-              One Standard.
+              {t.h2[1]}
             </h2>
           </div>
           <Link
             href="/book"
             className="bg-accent text-bg px-8 py-3.5 text-[0.8125rem] tracking-[0.12em] uppercase font-medium no-underline"
           >
-            Book Now
+            {t.book}
           </Link>
         </motion.div>
 
@@ -56,23 +95,13 @@ export default function Locations() {
           <div className="flex items-center gap-3 mb-10">
             <div className="w-7 h-px bg-accent" />
             <span className="text-accent text-[0.6875rem] tracking-[0.3em] uppercase">
-              Our Journey
+              {t.journeyEyebrow}
             </span>
           </div>
 
           <div className="relative max-w-[640px]">
-            {/* Vertical line */}
             <div className="absolute right-[11px] top-0 bottom-0 w-px bg-border" />
-
-            {[
-              { year: '1995', label: 'Family trade begins in Beirut', active: false },
-              { year: '2009', label: 'Saad moves to Finland', active: false },
-              { year: '2016', label: '1st location — Kannelmäki', active: true },
-              { year: '2018', label: '2nd location — Kivistö', active: true },
-              { year: '2019', label: '3rd location — Kallio', active: true },
-              { year: '2022', label: '4th location — Kruunuvuorenranta', active: true },
-              { year: '2024', label: '5th location — Otaniemi', active: true },
-            ].map(({ year, label, active }, i) => (
+            {t.timeline.map(({ year, label, active }, i) => (
               <motion.div
                 key={year}
                 initial={{ opacity: 0, x: -12 }}
@@ -111,7 +140,6 @@ export default function Locations() {
               className="grid grid-cols-1 md:grid-cols-[2fr_1fr_auto] items-center border-b border-border"
               style={{ gap: '1.25rem 2rem', padding: '2.25rem 0' }}
             >
-              {/* Name + contact */}
               <div>
                 <h3
                   className="font-display font-bold uppercase tracking-[0.02em] text-text leading-none mb-2"
@@ -138,7 +166,6 @@ export default function Locations() {
                 </div>
               </div>
 
-              {/* Hours */}
               <div>
                 {Object.values(loc.hours).map((h) => (
                   <p
@@ -150,7 +177,6 @@ export default function Locations() {
                 ))}
               </div>
 
-              {/* CTA */}
               {loc.timmaUrl ? (
                 <a
                   href={loc.timmaUrl}
@@ -158,11 +184,11 @@ export default function Locations() {
                   rel="noopener noreferrer"
                   className="inline-block self-start justify-self-start bg-accent text-bg px-6 py-[0.625rem] text-xs tracking-[0.1em] uppercase no-underline whitespace-nowrap font-medium transition-opacity duration-200 hover:opacity-80"
                 >
-                  Book here →
+                  {t.bookHere}
                 </a>
               ) : (
                 <span className="self-start justify-self-start text-[#3a3530] text-xs tracking-[0.1em] uppercase whitespace-nowrap">
-                  Coming soon
+                  {t.comingSoon}
                 </span>
               )}
             </motion.div>

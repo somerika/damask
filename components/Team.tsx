@@ -3,6 +3,12 @@
 import { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
+import { useLanguage } from '@/lib/language-context'
+
+const content = {
+  en: { eyebrow: 'Our Team', h2: ['The Hands', 'Behind the Craft.'] },
+  fi: { eyebrow: 'Tiimimme', h2: ['Kädet', 'taidon takana.'] },
+}
 
 const barbers = [
   { name: 'Saad', photo: 'https://damask.fi/wp-content/uploads/2016/07/IMG_1072-1.jpg' },
@@ -20,10 +26,11 @@ const barbers = [
 export default function Team() {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
+  const { lang } = useLanguage()
+  const t = content[lang]
 
   return (
     <section id="team" ref={ref} className="bg-bg border-t border-border">
-      {/* Header */}
       <div
         className="flex justify-between items-end flex-wrap gap-4 border-b border-border"
         style={{
@@ -38,21 +45,20 @@ export default function Team() {
           <div className="flex items-center gap-3 mb-5">
             <div className="w-7 h-px bg-accent" />
             <span className="text-accent text-[0.6875rem] tracking-[0.3em] uppercase">
-              Our Team
+              {t.eyebrow}
             </span>
           </div>
           <h2
             className="font-display font-extrabold uppercase tracking-[-0.01em] leading-[0.92] text-text"
             style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}
           >
-            The Hands
+            {t.h2[0]}
             <br />
-            Behind the Craft.
+            {t.h2[1]}
           </h2>
         </motion.div>
       </div>
 
-      {/* Circle grid */}
       <div
         className="flex flex-wrap justify-center"
         style={{
@@ -70,10 +76,7 @@ export default function Team() {
           >
             <div
               className="rounded-full overflow-hidden relative border border-border transition-colors duration-300 hover:border-accent"
-              style={{
-                width: 'clamp(96px, 12vw, 160px)',
-                height: 'clamp(96px, 12vw, 160px)',
-              }}
+              style={{ width: 'clamp(96px, 12vw, 160px)', height: 'clamp(96px, 12vw, 160px)' }}
             >
               <Image
                 src={b.photo}
@@ -81,10 +84,7 @@ export default function Team() {
                 fill
                 sizes="(max-width: 640px) 96px, 160px"
                 className="object-cover transition-[filter] duration-300"
-                style={{
-                  objectPosition: `center ${b.focalY ?? '15%'}`,
-                  filter: 'grayscale(15%)',
-                }}
+                style={{ objectPosition: `center ${b.focalY ?? '15%'}`, filter: 'grayscale(15%)' }}
               />
             </div>
             <p className="font-display text-base font-bold uppercase tracking-[0.1em] text-text leading-none text-center">

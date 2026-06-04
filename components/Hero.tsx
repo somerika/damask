@@ -13,9 +13,9 @@ const content = {
     services: 'Services ↓',
   },
   fi: {
-    eyebrow: 'Per. 2016 · Helsinki',
+    eyebrow: 'Est. 2016 · Helsinki',
     h1: ['Your great', 'look starts', 'here.'],
-    sub: 'Ammattitaitoiset parturit. Viisi liikettä Helsingissä, Vantaalla ja Espoossa.',
+    sub: 'Ammattitaitoiset parturit – viisi liikettä Helsingissä, Vantaalla ja Espoossa.',
     book: 'Varaa aika',
     services: 'Palvelut ↓',
   },
@@ -50,8 +50,8 @@ export default function Hero() {
       {/* Top gradient for nav */}
       <div className="absolute top-0 left-0 right-0 h-[180px] z-[2] bg-gradient-to-b from-bg/70 to-transparent" />
 
-      {/* Language toggle — top right */}
-      <div className="absolute top-[84px] right-[clamp(1.25rem,4vw,3rem)] z-20 flex gap-8">
+      {/* Language toggle — top right (desktop only, mobile uses nav overlay) */}
+      <div className="hidden md:flex absolute top-[84px] right-[clamp(1.25rem,4vw,3rem)] z-20 gap-8">
         {(['en', 'fi'] as const).map((l) => (
           <button
             key={l}

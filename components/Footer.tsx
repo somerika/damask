@@ -3,17 +3,50 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { LOCATIONS } from '@/lib/locations'
+import { useLanguage } from '@/lib/language-context'
+
+const content = {
+  en: {
+    description:
+      'Expert barbering since 2016. Five locations across Helsinki, Vantaa and Espoo — a family trade delivered with precision.',
+    navigate: 'Navigate',
+    links: [
+      { label: 'Services', href: '/services' },
+      { label: 'Pricing', href: '/services#prices' },
+      { label: 'Our Team', href: '/team' },
+      { label: 'Locations', href: '/locations' },
+    ],
+    bookNow: 'Book Now →',
+    locationsTitle: 'Locations',
+    copyright: `© ${new Date().getFullYear()} Damask Barber Shop. All rights reserved.`,
+  },
+  fi: {
+    description:
+      'Ammattitaitoista parturityötä vuodesta 2016. Viisi toimipistettä Helsingissä, Vantaalla ja Espoossa – sukupolvien taito tarjottuna täsmällisesti.',
+    navigate: 'Navigoi',
+    links: [
+      { label: 'Palvelut', href: '/services' },
+      { label: 'Hinnasto', href: '/services#prices' },
+      { label: 'Tiimimme', href: '/team' },
+      { label: 'Toimipisteet', href: '/locations' },
+    ],
+    bookNow: 'Varaa aika →',
+    locationsTitle: 'Toimipisteet',
+    copyright: `© ${new Date().getFullYear()} Damask Barber Shop. Kaikki oikeudet pidätetään.`,
+  },
+}
 
 export default function Footer() {
+  const { lang } = useLanguage()
+  const t = content[lang]
+
   return (
     <footer
       className="bg-surface border-t border-border"
       style={{ padding: 'clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem) 2.5rem' }}
     >
       <div className="max-w-[1400px] mx-auto">
-        {/* Top grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-12 pb-14 border-b border-border mb-8">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-[10px] mb-6">
               <Image
@@ -29,22 +62,15 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-muted text-sm leading-[1.8] max-w-[36ch] font-light">
-              Expert barbering since 2016. Five locations across Helsinki and Vantaa — a family
-              trade delivered with precision.
+              {t.description}
             </p>
           </div>
 
-          {/* Navigate */}
           <div>
             <p className="text-accent text-[0.6875rem] tracking-[0.25em] uppercase mb-5">
-              Navigate
+              {t.navigate}
             </p>
-            {[
-              { label: 'Services', href: '/services' },
-              { label: 'Pricing', href: '/services#prices' },
-              { label: 'Our Team', href: '/team' },
-              { label: 'Locations', href: '/locations' },
-            ].map(({ label, href }) => (
+            {t.links.map(({ label, href }) => (
               <Link
                 key={href}
                 href={href}
@@ -57,14 +83,13 @@ export default function Footer() {
               href="/book"
               className="inline-block mt-4 text-accent text-sm no-underline font-normal"
             >
-              Book Now →
+              {t.bookNow}
             </Link>
           </div>
 
-          {/* Locations */}
           <div>
             <p className="text-accent text-[0.6875rem] tracking-[0.25em] uppercase mb-5">
-              Locations
+              {t.locationsTitle}
             </p>
             {LOCATIONS.map((loc) => (
               <div key={loc.id} className="mb-3">
@@ -75,11 +100,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="flex justify-between items-center flex-wrap gap-3">
-          <p className="text-muted text-xs font-light">
-            © {new Date().getFullYear()} Damask Barber Shop. All rights reserved.
-          </p>
+          <p className="text-muted text-xs font-light">{t.copyright}</p>
           <p className="text-muted text-xs font-light">Helsinki · Vantaa · Espoo</p>
         </div>
       </div>

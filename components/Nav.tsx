@@ -6,12 +6,20 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '@/lib/language-context'
 
-const links = [
-  { label: 'Services', href: '/services' },
-  { label: 'Our Team', href: '/team' },
-  { label: 'Locations', href: '/locations' },
-  { label: 'Book Now', href: '/book' },
-]
+const links = {
+  en: [
+    { label: 'Services', href: '/services' },
+    { label: 'Our Team', href: '/team' },
+    { label: 'Locations', href: '/locations' },
+    { label: 'Book Now', href: '/book' },
+  ],
+  fi: [
+    { label: 'Palvelut', href: '/services' },
+    { label: 'Tiimimme', href: '/team' },
+    { label: 'Toimipisteet', href: '/locations' },
+    { label: 'Varaa aika', href: '/book' },
+  ],
+}
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -42,7 +50,6 @@ export default function Nav() {
           borderColor: !open && scrolled ? '#272320' : 'transparent',
         }}
       >
-        {/* Logo */}
         <Link
           href="/"
           onClick={() => setOpen(false)}
@@ -58,17 +65,15 @@ export default function Nav() {
           />
         </Link>
 
-        {/* Menu button */}
         <button
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           className="bg-transparent border-none cursor-pointer text-text z-[210] font-display text-2xl font-extrabold tracking-[0.12em] uppercase leading-none transition-opacity duration-200 hover:opacity-60 p-0"
         >
-          {open ? 'CLOSE' : 'MENU'}
+          {open ? (lang === 'fi' ? 'SULJE' : 'CLOSE') : 'MENU'}
         </button>
       </header>
 
-      {/* Full-screen menu overlay */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -80,9 +85,8 @@ export default function Nav() {
             className="fixed inset-0 z-[190] bg-bg flex flex-col justify-end"
             style={{ padding: 'clamp(3rem, 8vw, 6rem) clamp(1.25rem, 4vw, 3rem)' }}
           >
-            {/* Links */}
             <nav className="border-t border-border">
-              {links.map((l, i) => (
+              {links[lang].map((l, i) => (
                 <div key={l.href} className="overflow-hidden border-b border-border">
                   <motion.div
                     initial={{ y: '100%' }}
@@ -107,7 +111,6 @@ export default function Nav() {
               ))}
             </nav>
 
-            {/* Bottom bar */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -118,13 +121,13 @@ export default function Nav() {
               <p className="text-muted text-[0.8125rem] font-light tracking-[0.06em]">
                 Est. 2016 · Helsinki · Vantaa · Espoo
               </p>
-              <div className="flex gap-6">
+              <div className="flex gap-2">
                 {(['en', 'fi'] as const).map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
-                    className={`bg-transparent border-none cursor-pointer p-0 font-display text-xs tracking-[0.2em] uppercase transition-colors duration-200 ${
-                      lang === l ? 'text-text font-bold' : 'text-[#3a3530] font-normal'
+                    className={`bg-transparent border-none cursor-pointer font-display text-sm tracking-[0.2em] uppercase transition-colors duration-200 px-3 py-2 ${
+                      lang === l ? 'text-text font-bold' : 'text-muted font-normal'
                     }`}
                   >
                     {l}
