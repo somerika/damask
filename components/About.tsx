@@ -7,7 +7,7 @@ import { useLanguage } from '@/lib/language-context'
 const content = {
   en: {
     eyebrow: 'Our Story',
-    h2: ['From Beirut', 'To Helsinki.'],
+    h2: ['From Syria', 'To Helsinki.'],
     p1: 'We are a Kurdish family from Syria. Our family has been in barbering since 1995, with experience built across Beirut and Erbil. Saad, the eldest son, moved to Finland in 2009 and opened the first Damask location in Kannelmäki in 2016 — bringing a craft shaped over generations.',
     p2: 'What started as one chair has grown into five locations across the Helsinki metropolitan area. The standard has stayed the same: expert hands, patient craft, and genuine care for every person who sits in the chair.',
     stats: [
@@ -18,7 +18,7 @@ const content = {
   },
   fi: {
     eyebrow: 'Tarinamme',
-    h2: ['Beirutista', 'Helsinkiin.'],
+    h2: ['Syyriasta', 'Helsinkiin.'],
     p1: 'Olemme kurdialaisperhe Syyriasta. Perheemme on harjoittanut parturityötä vuodesta 1995, kokemusta on kertynyt Beirutissa ja Erbilistä. Saad, perheen vanhin poika, muutti Suomeen vuonna 2009 ja avasi ensimmäisen Damask-liikkeen Kannelmäessä vuonna 2016 – tuoden mukanaan sukupolvien ajan kehittyneen ammattitaidon.',
     p2: 'Yhdestä tuolista on kasvanut viisi toimipistettä Helsingin metropolialueella. Standardi on pysynyt samana: taitavat kädet, kärsivällinen työ ja aito välittäminen jokaisesta asiakkaasta.',
     stats: [
