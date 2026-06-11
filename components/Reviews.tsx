@@ -108,9 +108,6 @@ function ReviewCard({ review }: { review: (typeof reviews)[0] }) {
   )
 }
 
-const row1 = reviews.slice(0, 9)
-const row2 = reviews.slice(9)
-
 export default function Reviews() {
   const { lang } = useLanguage()
 
@@ -127,18 +124,10 @@ export default function Reviews() {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
         }
-        @keyframes marquee-right {
-          from { transform: translateX(-50%); }
-          to { transform: translateX(0); }
-        }
         .marquee-left {
           animation: marquee-left 70s linear infinite;
         }
-        .marquee-right {
-          animation: marquee-right 78s linear infinite;
-        }
-        .marquee-left:hover,
-        .marquee-right:hover {
+        .marquee-left:hover {
           animation-play-state: paused;
         }
       `}</style>
@@ -161,19 +150,9 @@ export default function Reviews() {
         </h2>
       </div>
 
-      {/* Row 1 — scrolls left */}
-      <div className="flex overflow-hidden mb-4">
-        <div className="marquee-left flex gap-4" style={{ width: 'max-content' }}>
-          {[...row1, ...row1].map((r, i) => (
-            <ReviewCard key={i} review={r} />
-          ))}
-        </div>
-      </div>
-
-      {/* Row 2 — scrolls right */}
       <div className="flex overflow-hidden">
-        <div className="marquee-right flex gap-4" style={{ width: 'max-content' }}>
-          {[...row2, ...row2].map((r, i) => (
+        <div className="marquee-left flex gap-4" style={{ width: 'max-content' }}>
+          {[...reviews, ...reviews].map((r, i) => (
             <ReviewCard key={i} review={r} />
           ))}
         </div>
