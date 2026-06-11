@@ -94,12 +94,12 @@ const content = {
           { name: 'Hiustenpesu', price: '€10' },
           { name: 'Hiustenleikkaus', price: 'Alkaen €25' },
           { name: 'Mallinmuutosleikkaus', price: 'Alkaen €30' },
-          { name: 'Hiusten Värjäys', price: 'Alkaen €49' },
+          { name: 'Hiusten värjäys', price: 'Alkaen €49' },
           { name: 'Hiusraidat', price: 'Alkaen €59' },
-          { name: 'Hiusten Suoristus', price: 'Alkaen €49' },
+          { name: 'Hiusten suoristus', price: 'Alkaen €49' },
           { name: 'Permanentti', price: 'Alkaen €89' },
           { name: 'Hiustatuointi', price: 'Alkaen €15' },
-          { name: 'Lasten Hiustenleikkaus (alle 12v)', price: '€20' },
+          { name: 'Lasten hiustenleikkaus (alle 12v)', price: '€20' },
         ],
       },
       {
@@ -107,21 +107,21 @@ const content = {
         services: [
           { name: 'Koneparranajo', price: '€10' },
           { name: 'Teräajelu', price: '€15' },
-          { name: 'Parran Muotoilu', price: '€20' },
+          { name: 'Parran muotoilu', price: '€20' },
         ],
       },
       {
         title: 'Ihohoito',
         services: [
-          { name: 'Kasvohoito Käsillä (20 min)', price: '€20' },
-          { name: 'Kasvohoito Koneella (60 min)', price: '€50' },
+          { name: 'Manuaalinen kasvohoito (20 min)', price: '€20' },
+          { name: 'Laitteellinen kasvohoito (60 min)', price: '€50' },
         ],
       },
       {
         title: 'Karvanpoisto',
         services: [
-          { name: 'Karvan Poisto Vahalla', price: 'Alkaen €15' },
-          { name: 'Karvan Poisto Langalla', price: 'Alkaen €15' },
+          { name: 'Karvan poisto vahalla', price: 'Alkaen €15' },
+          { name: 'Karvan poisto langalla', price: 'Alkaen €15' },
         ],
       },
       {
@@ -140,15 +140,15 @@ const content = {
         {
           title: 'Naisten Väri',
           services: [
-            { name: 'Naisten Hiusten Värjäys', price: 'Alkaen €139' },
-            { name: 'Naisten Hiusraidat', price: 'Alkaen €99' },
+            { name: 'Naisten hiusten värjäys', price: 'Alkaen €139' },
+            { name: 'Naisten hiusraidat', price: 'Alkaen €99' },
           ],
         },
         {
           title: 'Naisten Hoidot',
           services: [
-            { name: 'Naisten Hiusten Suoristus', price: 'Alkaen €99' },
-            { name: 'Naisten Hiusten Kihartaminen', price: 'Alkaen €149' },
+            { name: 'Naisten hiusten suoristus', price: 'Alkaen €99' },
+            { name: 'Naisten hiusten kihartaminen', price: 'Alkaen €149' },
           ],
         },
       ] as Category[],

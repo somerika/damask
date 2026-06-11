@@ -19,8 +19,8 @@ const content = {
   fi: {
     eyebrow: 'Tarinamme',
     h2: ['Syyriasta', 'Helsinkiin.'],
-    p1: 'Olemme kurdialaisperhe Syyriasta. Perheemme on harjoittanut parturityötä vuodesta 1995, kokemusta on kertynyt Beirutissa ja Erbilistä. Saad, perheen vanhin poika, muutti Suomeen vuonna 2009 ja avasi ensimmäisen Damask-liikkeen Kannelmäessä vuonna 2016 – tuoden mukanaan sukupolvien ajan kehittyneen ammattitaidon.',
-    p2: 'Yhdestä tuolista on kasvanut viisi toimipistettä Helsingin metropolialueella. Standardi on pysynyt samana: taitavat kädet, kärsivällinen työ ja aito välittäminen jokaisesta asiakkaasta.',
+    p1: 'Olemme kurdialaisperhe Syyriasta. Perheemme on harjoittanut parturityötä vuodesta 1995, kokemusta on kertynyt Beirutissa ja Erbilissä. Saad, perheen vanhin poika, muutti Suomeen vuonna 2009 ja avasi ensimmäisen Damask-liikkeen Kannelmäkeen vuonna 2016 – tuoden mukanaan sukupolvien ajan kehittyneen ammattitaidon.',
+    p2: 'Yhdestä tuolista on kasvanut viisi toimipistettä pääkaupunkiseudulla. Taso on pysynyt samana: taitavat kädet, huolellinen työ ja aito välittäminen jokaisesta asiakkaasta.',
     stats: [
       { year: '1995', label: 'Perheen parturiura alkaa' },
       { year: '2016', label: 'Ensimmäinen liike avataan' },

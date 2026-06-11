@@ -16,7 +16,7 @@ const content = {
   },
   fi: {
     eyebrow: 'Löydä meidät',
-    h2: ['Viisi toimipistettä.', 'Yksi standardi.'],
+    h2: ['Viisi toimipistettä.', 'Sama laatutaso.'],
     book: 'Varaa aika',
     bookHere: 'Varaa tästä →',
     comingSoon: 'Tulossa pian',
