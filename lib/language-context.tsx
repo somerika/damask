@@ -14,7 +14,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem('lang') as Lang | null
-    if (saved === 'en' || saved === 'fi') setLangState(saved)
+    if (saved === 'en' || saved === 'fi') {
+      setLangState(saved)
+    } else if (navigator.language.startsWith('fi')) {
+      setLangState('fi')
+    }
   }, [])
 
   const setLang = (l: Lang) => {
