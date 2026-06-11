@@ -20,7 +20,7 @@ const content = {
     h1: ['Valitse', 'toimipiste.'],
     description:
       'Valitse lähin Damask-toimipiste. Jokainen nappi avaa varausjärjestelmämme – valitse parturisi, päivämäärä ja palvelu.',
-    bookAt: (name: string) => `Varaa ${name}`,
+    bookAt: (name: string) => `Varaa aika – ${name}`,
     back: '← Takaisin',
     callNote:
       'Haluatko soittaa? Kaikki toimipisteet ovat tavoitettavissa puhelimitse aukioloaikoina.',

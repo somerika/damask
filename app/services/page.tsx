@@ -2,7 +2,6 @@ import Nav from '@/components/Nav'
 import ServicesMarquee from '@/components/ServicesMarquee'
 import Services from '@/components/Services'
 import About from '@/components/About'
-import Prices from '@/components/Prices'
 import Footer from '@/components/Footer'
 
 export default function ServicesPage() {
@@ -13,7 +12,6 @@ export default function ServicesPage() {
         <ServicesMarquee />
         <Services />
         <About />
-        <Prices />
       </main>
       <Footer />
     </div>

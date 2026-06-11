@@ -24,7 +24,7 @@ const content = {
     stats: [
       { year: '1995', label: 'Perheen parturiura alkaa' },
       { year: '2016', label: 'Ensimmäinen liike avataan' },
-      { year: '5', label: 'Toimipistettä tänään' },
+      { year: '5', label: 'Toimipistettä' },
     ],
   },
 }

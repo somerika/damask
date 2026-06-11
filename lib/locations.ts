@@ -27,7 +27,7 @@ export const LOCATIONS: Location[] = [
     city: '00500 Helsinki',
     phone: '+358 40 3240039',
     email: 'kallio@damask.fi',
-    hours: { weekdays: 'Mon–Fri  10–19', saturday: 'Sat  10–18', sunday: 'Sun  Closed' },
+    hours: { weekdays: 'Mon–Fri  10–19', saturday: 'Sat  10–18', sunday: 'Sun  12–18' },
     timmaUrl: 'https://varaa.timma.fi/damaskkallio',
   },
   {

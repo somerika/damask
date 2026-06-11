@@ -50,21 +50,6 @@ export default function Hero() {
       {/* Top gradient for nav */}
       <div className="absolute top-0 left-0 right-0 h-[180px] z-[2] bg-gradient-to-b from-bg/70 to-transparent" />
 
-      {/* Language toggle — top right (desktop only, mobile uses nav overlay) */}
-      <div className="hidden md:flex absolute top-[84px] right-[clamp(1.25rem,4vw,3rem)] z-20 gap-8">
-        {(['en', 'fi'] as const).map((l) => (
-          <button
-            key={l}
-            onClick={() => setLang(l)}
-            className={`bg-transparent border-none cursor-pointer p-0 font-display text-xs tracking-[0.2em] uppercase transition-colors duration-200 ${
-              lang === l ? 'text-text font-bold' : 'text-text/35 font-normal'
-            }`}
-          >
-            {l}
-          </button>
-        ))}
-      </div>
-
       {/* Hero content — bottom aligned */}
       <div
         className="absolute bottom-0 left-0 right-0 z-10"

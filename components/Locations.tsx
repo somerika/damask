@@ -11,16 +11,6 @@ const content = {
     eyebrow: 'Find Us',
     h2: ['Five Locations.', 'One Standard.'],
     book: 'Book Now',
-    journeyEyebrow: 'Our Journey',
-    timeline: [
-      { year: '1995', label: 'Family trade begins in Beirut', active: false },
-      { year: '2009', label: 'Saad moves to Finland', active: false },
-      { year: '2016', label: '1st location — Kannelmäki', active: true },
-      { year: '2018', label: '2nd location — Kivistö', active: true },
-      { year: '2019', label: '3rd location — Kallio', active: true },
-      { year: '2022', label: '4th location — Kruunuvuorenranta', active: true },
-      { year: '2024', label: '5th location — Otaniemi', active: true },
-    ],
     bookHere: 'Book here →',
     comingSoon: 'Coming soon',
   },
@@ -28,16 +18,6 @@ const content = {
     eyebrow: 'Löydä meidät',
     h2: ['Viisi toimipistettä.', 'Yksi standardi.'],
     book: 'Varaa aika',
-    journeyEyebrow: 'Matkamme',
-    timeline: [
-      { year: '1995', label: 'Perheen parturiura alkaa Beirutissa', active: false },
-      { year: '2009', label: 'Saad muuttaa Suomeen', active: false },
-      { year: '2016', label: '1. toimipiste — Kannelmäki', active: true },
-      { year: '2018', label: '2. toimipiste — Kivistö', active: true },
-      { year: '2019', label: '3. toimipiste — Kallio', active: true },
-      { year: '2022', label: '4. toimipiste — Kruunuvuorenranta', active: true },
-      { year: '2024', label: '5. toimipiste — Otaniemi', active: true },
-    ],
     bookHere: 'Varaa tästä →',
     comingSoon: 'Tulossa pian',
   },
@@ -83,50 +63,6 @@ export default function Locations() {
           >
             {t.book}
           </Link>
-        </motion.div>
-
-        {/* Timeline */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-          className="mb-20"
-        >
-          <div className="flex items-center gap-3 mb-10">
-            <div className="w-7 h-px bg-accent" />
-            <span className="text-accent text-[0.6875rem] tracking-[0.3em] uppercase">
-              {t.journeyEyebrow}
-            </span>
-          </div>
-
-          <div className="relative max-w-[640px]">
-            <div className="absolute right-[11px] top-0 bottom-0 w-px bg-border" />
-            {t.timeline.map(({ year, label, active }, i) => (
-              <motion.div
-                key={year}
-                initial={{ opacity: 0, x: -12 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.3 + i * 0.07, ease: 'easeOut' }}
-                className="grid items-center py-5"
-                style={{ gridTemplateColumns: '72px 1fr 24px', gap: '2rem' }}
-              >
-                <div
-                  className={`font-display font-extrabold tracking-[-0.01em] leading-none ${active ? 'text-accent' : 'text-[#3a3530]'}`}
-                  style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}
-                >
-                  {year}
-                </div>
-                <div
-                  className={`text-[0.9375rem] font-light tracking-[0.01em] ${active ? 'text-muted' : 'text-[#3a3530]'}`}
-                >
-                  {label}
-                </div>
-                <div
-                  className={`w-2.5 h-2.5 rounded-full justify-self-center relative z-[1] ${active ? 'bg-accent' : 'bg-[#3a3530]'}`}
-                />
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Location rows */}

@@ -13,7 +13,7 @@ const content = {
     links: [
       { label: 'Services', href: '/services' },
       { label: 'Pricing', href: '/services#prices' },
-      { label: 'Our Team', href: '/team' },
+      { label: 'About Us', href: '/team' },
       { label: 'Locations', href: '/locations' },
     ],
     bookNow: 'Book Now →',
@@ -23,11 +23,11 @@ const content = {
   fi: {
     description:
       'Ammattitaitoista parturityötä vuodesta 2016. Viisi toimipistettä Helsingissä, Vantaalla ja Espoossa – perheyritys, tehty kunnolla.',
-    navigate: 'Navigoi',
+    navigate: 'Linkit',
     links: [
       { label: 'Palvelut', href: '/services' },
       { label: 'Hinnasto', href: '/services#prices' },
-      { label: 'Tiimimme', href: '/team' },
+      { label: 'Meistä', href: '/team' },
       { label: 'Toimipisteet', href: '/locations' },
     ],
     bookNow: 'Varaa aika →',

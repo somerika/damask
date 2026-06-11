@@ -9,13 +9,13 @@ import { useLanguage } from '@/lib/language-context'
 const links = {
   en: [
     { label: 'Services', href: '/services' },
-    { label: 'Our Team', href: '/team' },
+    { label: 'About Us', href: '/team' },
     { label: 'Locations', href: '/locations' },
     { label: 'Book Now', href: '/book' },
   ],
   fi: [
     { label: 'Palvelut', href: '/services' },
-    { label: 'Tiimimme', href: '/team' },
+    { label: 'Meistä', href: '/team' },
     { label: 'Toimipisteet', href: '/locations' },
     { label: 'Varaa aika', href: '/book' },
   ],
@@ -65,13 +65,28 @@ export default function Nav() {
           />
         </Link>
 
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          className="bg-transparent border-none cursor-pointer text-text z-[210] font-display text-2xl font-extrabold tracking-[0.12em] uppercase leading-none transition-opacity duration-200 hover:opacity-60 p-0"
-        >
-          {open ? (lang === 'fi' ? 'SULJE' : 'CLOSE') : 'MENU'}
-        </button>
+        <div className="flex items-center gap-5 z-[210]">
+          <div className="flex gap-1">
+            {(['en', 'fi'] as const).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className={`bg-transparent border-none cursor-pointer font-display text-sm tracking-[0.2em] uppercase px-2 py-1 transition-colors duration-200 ${
+                  lang === l ? 'text-text font-bold' : 'text-muted font-normal hover:text-text'
+                }`}
+              >
+                {l}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            className="bg-transparent border-none cursor-pointer text-text font-display text-2xl font-extrabold tracking-[0.12em] uppercase leading-none transition-opacity duration-200 hover:opacity-60 p-0"
+          >
+            {open ? (lang === 'fi' ? 'SULJE' : 'CLOSE') : 'MENU'}
+          </button>
+        </div>
       </header>
 
       <AnimatePresence>
@@ -116,24 +131,11 @@ export default function Nav() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4, delay: 0.5 }}
-              className="flex justify-between items-center mt-8 flex-wrap gap-4"
+              className="mt-8"
             >
               <p className="text-muted text-[0.8125rem] font-light tracking-[0.06em]">
                 Est. 2016 · Helsinki · Vantaa · Espoo
               </p>
-              <div className="flex gap-2">
-                {(['en', 'fi'] as const).map((l) => (
-                  <button
-                    key={l}
-                    onClick={() => setLang(l)}
-                    className={`bg-transparent border-none cursor-pointer font-display text-sm tracking-[0.2em] uppercase transition-colors duration-200 px-3 py-2 ${
-                      lang === l ? 'text-text font-bold' : 'text-muted font-normal'
-                    }`}
-                  >
-                    {l}
-                  </button>
-                ))}
-              </div>
             </motion.div>
           </motion.div>
         )}
