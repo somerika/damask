@@ -90,9 +90,26 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
           className="flex justify-between items-end flex-wrap gap-6"
         >
-          <p className="text-text/55 text-[0.9375rem] font-light leading-[1.7] max-w-[38ch]">
-            {t.sub}
-          </p>
+          <div>
+            <p className="text-text/55 text-[0.9375rem] font-light leading-[1.7] max-w-[38ch] mb-4">
+              {t.sub}
+            </p>
+            <div className="flex items-center gap-2.5">
+              <div className="flex gap-0.5">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <svg key={i} width="13" height="13" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M6 1l1.236 2.504L10 3.91l-2 1.95.472 2.754L6 7.25 3.528 8.614 4 5.86 2 3.91l2.764-.406z"
+                      fill="#c4956a"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <span className="text-text/70 text-[0.75rem] font-light tracking-[0.04em]">
+                4.9 · Google Reviews
+              </span>
+            </div>
+          </div>
 
           <div className="flex gap-3.5 flex-wrap">
             <Link
