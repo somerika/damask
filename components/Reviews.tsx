@@ -161,7 +161,12 @@ export default function Reviews() {
           to { transform: translateX(-50%); }
         }
         .marquee-left {
-          animation: marquee-left 70s linear infinite;
+          animation: marquee-left 110s linear infinite;
+        }
+        @media (min-width: 640px) {
+          .marquee-left {
+            animation-duration: 70s;
+          }
         }
         .marquee-left:hover {
           animation-play-state: paused;
