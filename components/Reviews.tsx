@@ -75,6 +75,42 @@ const reviews = [
     author: 'Sakari Kervinen',
     text: "Affordable and fast service. I've been going for many years.",
   },
+  {
+    author: 'Vesa Pöyhönen',
+    text: 'I visited after reading the positive reviews, and they were absolutely deserved. Even though I gave Memo fairly vague instructions for my hair and beard, he understood exactly what I wanted and delivered a fantastic result. Great service, excellent attention to detail, and a style that suited me perfectly. The price-to-quality ratio is probably the best in the city.',
+  },
+  {
+    author: 'Hamid Alo',
+    text: "A truly professional barber and excellent service! The haircut was exactly what I wanted, and the atmosphere was relaxed and friendly. Customer satisfaction is a priority here. I highly recommend it to anyone looking for a quality men's barber. I will definitely be back!",
+  },
+  {
+    author: 'Ville Arvola',
+    text: 'A very skilled and knowledgeable barber and a better than expected cut made this barbershop the absolute BEST PLACE in Espoo for future haircuts. Very precise results. I definitely recommend going there because of the reasonable prices for the cut.',
+  },
+  {
+    author: 'Abdullh Osman',
+    text: 'I came here for a haircut and received excellent service and very kind treatment. I recommend this to all people in this area.',
+  },
+  {
+    author: 'Giovanni Azzaretti',
+    text: "He's carrying my life here in Helsinki. Top barber around. Don't even need the recovery shower after the cut since they're already perfect.",
+  },
+  {
+    author: 'Ashenca Gunarathna',
+    text: "I had a great experience at Damask Parturi Kannelmäki. Khalil did an excellent job with my haircut. He was professional, friendly, and really listened to what I wanted. The result was clean and exactly how I imagined. The shop was welcoming and well-kept. I'm very happy and will definitely come back. Highly recommended!",
+  },
+  {
+    author: 'Timo Tervo',
+    text: "Been coming here for several years because you don't have to worry about making an appointment and the quality is good. Parking is nearby. If you have to wait a while, the parrot's chatter and the massage chair will help pass the time.",
+  },
+  {
+    author: 'Talaat Mukhlif',
+    text: 'The barbershop is excellent. The service is high quality and professional, and the barbers are really knowledgeable and friendly. I highly recommend it!',
+  },
+  {
+    author: 'Matti Lehtonen',
+    text: 'Excellent barber shop. Friendly staff, haircuts are quick and always as hoped for. Also affordable. Recommended!',
+  },
 ]
 
 const Stars = () => (
