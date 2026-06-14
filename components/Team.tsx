@@ -15,7 +15,10 @@ type Barber = {
 const barbers: Barber[] = [
   {
     name: 'Saad',
-    role: { en: 'Owner · Kannelmäki, Kallio', fi: 'Omistaja · Kannelmäki, Kallio' },
+    role: {
+      en: 'Owner · Kannelmäki, Kruunuvuorenranta',
+      fi: 'Omistaja · Kannelmäki, Kruunuvuorenranta',
+    },
     photo: 'https://damask.fi/wp-content/uploads/2016/07/IMG_1072-1.jpg',
   },
   {
