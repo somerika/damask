@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/lib/language-context'
 
-const reviews = [
+const reviewsEn = [
   {
     author: 'Jere Uljas',
     text: 'A very good experience! The barber was professional, listened to my wishes carefully and the end result exceeded my expectations. The service was friendly and relaxed, and the whole visit took place in a nice atmosphere. The hair was cut carefully and finished stylishly.',
@@ -113,6 +113,117 @@ const reviews = [
   },
 ]
 
+const reviewsFi = [
+  {
+    author: 'Jere Uljas',
+    text: 'Todella hyvä kokemus! Parturi oli ammattitaitoinen, kuunteli toiveitani tarkasti ja lopputulos ylitti odotukseni. Palvelu oli ystävällistä ja rentoa, ja koko käynti sujui mukavassa tunnelmassa. Hiukset leikattiin huolellisesti ja viimeisteltiin tyylikkäästi.',
+  },
+  {
+    author: 'Henri Sutinen',
+    text: 'Menimme sinne ex tempore sunnuntaina ensimmäistä kertaa – sain leikkauksen 8-vuotiaalle pojalleni ja itselleni. Kahvia oli tarjolla odotellessa. Leikkaus sujui hyvin ja nopeasti. Hinta oli kohtuullinen. Suosittelen ehdottomasti.',
+  },
+  {
+    author: 'shyar',
+    text: 'Loistava asiakaspalvelu. Konsepti on hyvin mietitty, asiakkaaseen käytetään aikaa ja vaivaa. Juuri sellainen parturi kuin jokainen mies kaipaa. Rauhallinen liike ja osaava parturi. Kahviakin tarjolla – lämpimästi suosittelen.',
+  },
+  {
+    author: 'Ville Kalima',
+    text: 'Alueen paras parturi! Hiukset ja parta hoidetaan samalla kertaa. Olen käynyt täällä useita vuosia ja palaan aina takaisin. Todella kilpailukykyiset hinnat ja mahtavat tyypit partureina.',
+  },
+  {
+    author: 'Nazdar abdulkader',
+    text: 'Erinomainen parturi! Huolellinen ja taitava parturi, joka kuuntelee asiakkaan toiveita tarkasti. Siisti viimeistely ja mukava asiakaspalvelu. Suosittelen lämpimästi.',
+  },
+  {
+    author: 'Aleksi Hänninen',
+    text: 'Helsingin paras miestenparturi! Nopea ja mutkaton palvelu – suosittelen ehdottomasti käymään, jos et ole vielä käynyt.',
+  },
+  {
+    author: 'Anthony Burton',
+    text: 'Olen käynyt täällä avajaisista asti ja saanut aina erinomaista, ammattimaista palvelua hyvään hintaan. Vahvasti suosittelen.',
+  },
+  {
+    author: 'Joonas Rouhiainen',
+    text: 'Hyvä hiustenleikkaus hyvään hintaan – yksi suosikeistani Helsingissä hinta-laatu-suhteen osalta.',
+  },
+  {
+    author: 'Joel Eklöv',
+    text: 'Paras miestenparturi, jossa olen koskaan käynyt. Tulen tänne poikani kanssa jatkossakin.',
+  },
+  {
+    author: 'Joona Kuuramaa',
+    text: 'Pitkät hiukseni suoristettiin hetkessä. Olen erittäin tyytyväinen hintaan, laatuun ja nopeuteen.',
+  },
+  {
+    author: 'Niklas Tilli',
+    text: 'Ystävällistä ja laadukasta palvelua – olen ollut vakioasiakas jo useita vuosia.',
+  },
+  {
+    author: 'J-P Ristimaki appi',
+    text: 'Loistava paikallinen parturi, osaavat tyypit ja nopea palvelu. Käyttäkää paikallisia palveluita.',
+  },
+  {
+    author: 'Teemu Lehtonen',
+    text: 'Loistavaa ja nopeaa ammattimaista palvelua joka kerta. Suosittelen ehdottomasti käymään!',
+  },
+  {
+    author: 'Zeynaddin Hasan',
+    text: 'Ammattitaitoiset parturit ja siistit tilat. Suosittelen kaikille – 6/5.',
+  },
+  {
+    author: 'Lauri Mattila',
+    text: 'Loistava asiakaspalvelu, mukava henkilökunta – hyvä olo kun hiukset laitetaan ammattimaisesti kuntoon.',
+  },
+  {
+    author: 'Nikolai Laur',
+    text: 'Mukava ja kodikas paikka leikkauttaa hiukset ja siistittää parta samalla kertaa.',
+  },
+  {
+    author: 'Noksuboy',
+    text: 'Paras parturi, jossa olen koskaan käynyt – mukava liike ja tunnelma.',
+  },
+  {
+    author: 'Sakari Kervinen',
+    text: 'Edullinen ja nopea palvelu. Olen käynyt täällä jo vuosia.',
+  },
+  {
+    author: 'Vesa Pöyhönen',
+    text: 'Kävin positiivisten arvostelujen innoittamana, ja ne olivat täysin ansaittuja. Vaikka annoin Memolle melko epämääräiset ohjeet hiuksilleni ja parralleni, hän ymmärsi täsmälleen mitä halusin ja toimitti upean lopputuloksen. Loistavaa palvelua, erinomainen tarkkuus yksityiskohdissa ja täydellisesti sopiva tyyli. Hinta-laatu-suhde on luultavasti paras koko kaupungissa.',
+  },
+  {
+    author: 'Hamid Alo',
+    text: 'Todella ammattimainen parturi ja erinomaista palvelua! Leikkaus oli juuri sellainen kuin halusin, ja tunnelma oli rento ja ystävällinen. Asiakastyytyväisyys on täällä etusijalla. Suosittelen lämpimästi kaikille, jotka etsivät laadukasta miestenparturiia. Tulen ehdottomasti takaisin!',
+  },
+  {
+    author: 'Ville Arvola',
+    text: 'Todella taitava parturi ja odotukset ylittänyt leikkaus tekivät tästä ehdottoman PARHAAN PAIKAN Espoossa tulevaisuuden hiustenleikkauksille. Erittäin tarkat tulokset. Suosittelen ehdottomasti käymään kohtuullisten hintojen vuoksi.',
+  },
+  {
+    author: 'Abdullh Osman',
+    text: 'Tulin tänne hiustenleikkaukseen ja sain erinomaista palvelua ja todella ystävällistä kohtelua. Suosittelen tätä kaikille tällä alueella.',
+  },
+  {
+    author: 'Giovanni Azzaretti',
+    text: 'Pelastaa elämäni täällä Helsingissä. Alueen paras parturi. Leikkauksen jälkeen ei tarvitse edes suihkussa käydä, koska tulos on jo täydellinen.',
+  },
+  {
+    author: 'Ashenca Gunarathna',
+    text: 'Loistava kokemus Damask Parturi Kannelmäessä. Khalil teki erinomaisen työn hiustenleikkauksessani. Hän oli ammattimainen, ystävällinen ja kuunteli tarkkaan mitä halusin. Lopputulos oli siisti ja juuri sellainen kuin kuvittelin. Liike oli viihtyisä ja hyvin hoidettu. Olen erittäin tyytyväinen ja tulen ehdottomasti takaisin. Vahvasti suosittelen!',
+  },
+  {
+    author: 'Timo Tervo',
+    text: 'Käynyt täällä useita vuosia, koska ajanvarauksen kanssa ei tarvitse vaivata päätään ja laatu on hyvää. Parkkipaikka on lähellä. Jos joutuu odottamaan hetken, papukaijan loru ja hierontatuoli auttavat ajan kulumisessa.',
+  },
+  {
+    author: 'Talaat Mukhlif',
+    text: 'Parturi on erinomainen. Palvelu on laadukasta ja ammattimaista, ja parturit ovat todella osaavia ja ystävällisiä. Suosittelen lämpimästi!',
+  },
+  {
+    author: 'Matti Lehtonen',
+    text: 'Erinomainen parturiliike. Ystävällinen henkilökunta, leikkaukset ovat nopeita ja aina toiveiden mukaisia. Myös edullinen. Suositeltu!',
+  },
+]
+
 const Stars = () => (
   <div className="flex gap-1 mb-4">
     {[0, 1, 2, 3, 4].map((i) => (
@@ -147,6 +258,7 @@ function ReviewCard({ review }: { review: (typeof reviews)[0] }) {
 export default function Reviews() {
   const { lang } = useLanguage()
 
+  const reviews = lang === 'fi' ? reviewsFi : reviewsEn
   const heading = lang === 'fi' ? ['Asiakkaidemme', 'Sanoin.'] : ['In Our', "Clients' Words."]
   const eyebrow = lang === 'fi' ? 'Arvostelut' : 'Reviews'
 
