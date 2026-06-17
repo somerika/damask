@@ -111,6 +111,38 @@ const reviewsEn = [
     author: 'Matti Lehtonen',
     text: 'Excellent barber shop. Friendly staff, haircuts are quick and always as hoped for. Also affordable. Recommended!',
   },
+  {
+    author: 'Lagavulin',
+    text: 'Good quality and affordable, but the highlight was definitely the chatting Aaro parrot!',
+  },
+  {
+    author: 'Mika',
+    text: 'No appointment required, easy to go, good service. And the receipt comes without asking.',
+  },
+  {
+    author: 'Ossi Järveläinen',
+    text: 'Nice place and the result is always good! Get in quickly without an appointment.',
+  },
+  {
+    author: 'W A',
+    text: 'Perfect haircut every time, exactly as specified.',
+  },
+  {
+    author: 'Elina Apponen',
+    text: 'Great service. The child leaves satisfied every time. Good value for money!',
+  },
+  {
+    author: 'Mikko Kotiranta',
+    text: 'I got in right away and when I got up from my chair, I was like Roger Moore.',
+  },
+  {
+    author: 'Valtanen Eden',
+    text: 'Good coffee and a great parrot. Best cuts in Helsinki, obviously.',
+  },
+  {
+    author: 'Amir Abdelraziq',
+    text: 'Very nice and professional barbers and a beard trim at the same time. I recommend!!',
+  },
 ]
 
 const reviewsFi = [
@@ -221,6 +253,38 @@ const reviewsFi = [
   {
     author: 'Matti Lehtonen',
     text: 'Erinomainen parturiliike. Ystävällinen henkilökunta, leikkaukset ovat nopeita ja aina toiveiden mukaisia. Myös edullinen. Suositeltu!',
+  },
+  {
+    author: 'Lagavulin',
+    text: 'Hyvänlaatuista jälkeä ja edullinen – mutta kohokohta oli ehdottomasti höpisevä Aaro-papukaija!',
+  },
+  {
+    author: 'Mika',
+    text: 'Ilman ajanvarausta, helppo mennä, hyvä palvelu. Ja kuitti tulee pyytämättä.',
+  },
+  {
+    author: 'Ossi Järveläinen',
+    text: 'Mukava paikka asioida ja jälki on aina hyvää! Pääsee nopeasti ilman ajanvarausta.',
+  },
+  {
+    author: 'W A',
+    text: 'Täydellinen hiustenleikkaus joka kerta, juuri niin kuin on pyytänyt.',
+  },
+  {
+    author: 'Elina Apponen',
+    text: 'Loistava palvelu. Lapsi lähtee joka kerta tyytyväisenä. Hyvä hinta-laatu-suhde!',
+  },
+  {
+    author: 'Mikko Kotiranta',
+    text: 'Sisään pääsi heti ja kun nousin tuolista, olin kuin Roger Moore.',
+  },
+  {
+    author: 'Valtanen Eden',
+    text: 'Hyvä kahvi ja hieno papukaija. Parhaat leikkaukset Helsingissä, siinä ei ole epäilystäkään.',
+  },
+  {
+    author: 'Amir Abdelraziq',
+    text: 'Todella mukavat ja ammattitaitoiset parturit, ja parran ajo onnistuu siinä samalla. Suosittelen!',
   },
 ]
 
