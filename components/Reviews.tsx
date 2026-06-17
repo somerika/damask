@@ -12,16 +12,8 @@ const reviewsEn = [
     text: 'We went there ex tempore on Sunday, for the first time, and got a haircut for my 8 year old son and me. Coffee was available while I waited for my turn. The haircut went well and quickly. The price was reasonable. I can definitely recommend it.',
   },
   {
-    author: 'shyar',
-    text: 'Great customer service. The concept is well thought out, time and effort are spent on the customer. Exactly the kind of barber that every man is looking for. Peaceful business and expert barber. Coffee is also available, warm recommendation.',
-  },
-  {
     author: 'Ville Kalima',
     text: "The best barber in the area! Hair and beard done at the same time. I've been going to the barber for several years and I always come back. Really competitive prices and great guys as barbers.",
-  },
-  {
-    author: 'Nazdar abdulkader',
-    text: "Excellent barber! A careful and skilled barber who listens carefully to the customer's wishes. Neat finish and nice customer service. I highly recommend.",
   },
   {
     author: 'Aleksi Hänninen',
@@ -54,10 +46,6 @@ const reviewsEn = [
   {
     author: 'Teemu Lehtonen',
     text: 'Great and fast professional service, every time. I definitely recommend visiting!',
-  },
-  {
-    author: 'Zeynaddin Hasan',
-    text: 'Professional barbers and clean facilities. I highly recommend to everyone 6/5.',
   },
   {
     author: 'Lauri Mattila',
@@ -123,16 +111,8 @@ const reviewsFi = [
     text: 'Menimme sinne sunnuntaina ensimmäistä kertaa ennakkoon sopimatta – poikani (8 v.) ja minä saimme molemmat hiustenleikkauksen. Kahvia oli tarjolla odotellessa. Leikkaus sujui hyvin ja nopeasti. Hinta oli kohtuullinen. Suosittelen ehdottomasti.',
   },
   {
-    author: 'shyar',
-    text: 'Loistava asiakaspalvelu. Konsepti on hyvin mietitty, asiakkaaseen käytetään aikaa ja vaivaa. Juuri sellainen parturi kuin jokainen mies kaipaa. Rauhallinen liike ja osaava parturi. Kahviakin tarjolla – lämpimästi suosittelen.',
-  },
-  {
     author: 'Ville Kalima',
     text: 'Alueen paras parturi! Hiukset ja parta hoidetaan samalla kertaa. Olen käynyt täällä useita vuosia ja palaan aina takaisin. Todella kilpailukykyiset hinnat ja mahtavat tyypit partureina.',
-  },
-  {
-    author: 'Nazdar abdulkader',
-    text: 'Erinomainen parturi! Huolellinen ja taitava parturi, joka kuuntelee asiakkaan toiveita tarkasti. Siisti viimeistely ja mukava asiakaspalvelu. Suosittelen lämpimästi.',
   },
   {
     author: 'Aleksi Hänninen',
@@ -165,10 +145,6 @@ const reviewsFi = [
   {
     author: 'Teemu Lehtonen',
     text: 'Loistavaa ja nopeaa ammattimaista palvelua joka kerta. Suosittelen ehdottomasti käymään!',
-  },
-  {
-    author: 'Zeynaddin Hasan',
-    text: 'Ammattitaitoiset parturit ja siistit tilat. Suosittelen kaikille – 6/5.',
   },
   {
     author: 'Lauri Mattila',
