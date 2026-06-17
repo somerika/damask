@@ -43,7 +43,7 @@ export const LOCATIONS: Location[] = [
   {
     id: 'kivisto',
     name: 'Kivistö',
-    address: 'Safiirikuja 5',
+    address: 'Safirikuja 3',
     city: '01700 Vantaa',
     phone: '+358 40 7587759',
     email: 'kivisto@damask.fi',

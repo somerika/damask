@@ -147,7 +147,7 @@ export default function StructuredData() {
         email: 'kivisto@damask.fi',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Safiirikuja 5',
+          streetAddress: 'Safirikuja 3',
           addressLocality: 'Vantaa',
           postalCode: '01700',
           addressCountry: 'FI',
@@ -219,7 +219,7 @@ export default function StructuredData() {
             name: 'Missä Damask-parturit sijaitsevat?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Damaskilla on viisi toimipistettä: Kannelmäki (Kantelettarenkuja 1, Helsinki), Kallio (Vaasankatu 4, Helsinki), Kruunuvuorenranta (Haakoninlahdenkatu 1, Helsinki), Kivistö (Safiirikuja 5, Vantaa) ja Otaniemi (Otaniementie 12, Espoo).',
+              text: 'Damaskilla on viisi toimipistettä: Kannelmäki (Kantelettarenkuja 1, Helsinki), Kallio (Vaasankatu 4, Helsinki), Kruunuvuorenranta (Haakoninlahdenkatu 1, Helsinki), Kivistö (Safirikuja 3, Vantaa) ja Otaniemi (Otaniementie 12, Espoo).',
             },
           },
           {
@@ -227,7 +227,7 @@ export default function StructuredData() {
             name: 'Where are the Damask barbershops located?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Damask has five locations: Kannelmäki (Kantelettarenkuja 1, Helsinki), Kallio (Vaasankatu 4, Helsinki), Kruunuvuorenranta (Haakoninlahdenkatu 1, Helsinki), Kivistö (Safiirikuja 5, Vantaa), and Otaniemi (Otaniementie 12, Espoo).',
+              text: 'Damask has five locations: Kannelmäki (Kantelettarenkuja 1, Helsinki), Kallio (Vaasankatu 4, Helsinki), Kruunuvuorenranta (Haakoninlahdenkatu 1, Helsinki), Kivistö (Safirikuja 3, Vantaa), and Otaniemi (Otaniementie 12, Espoo).',
             },
           },
           {
