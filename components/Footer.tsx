@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { LOCATIONS } from '@/lib/locations'
 import { useLanguage } from '@/lib/language-context'
 
@@ -38,6 +39,7 @@ const content = {
 
 export default function Footer() {
   const { lang } = useLanguage()
+  const pathname = usePathname()
   const t = content[lang]
 
   return (
@@ -102,7 +104,12 @@ export default function Footer() {
 
         <div className="flex justify-between items-center flex-wrap gap-3">
           <p className="text-muted text-xs font-light">{t.copyright}</p>
-          <p className="text-muted text-xs font-light">Helsinki · Vantaa · Espoo</p>
+          <div className="flex items-center gap-4">
+            {pathname !== '/' && (
+              <p className="text-muted text-xs font-light">Powered by afmedia</p>
+            )}
+            <p className="text-muted text-xs font-light">Helsinki · Vantaa · Espoo</p>
+          </div>
         </div>
       </div>
     </footer>
