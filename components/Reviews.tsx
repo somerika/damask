@@ -116,10 +116,6 @@ const reviewsEn = [
     text: 'Good quality and affordable, but the highlight was definitely the chatting Aaro parrot!',
   },
   {
-    author: 'Mika',
-    text: 'No appointment required, easy to go, good service. And the receipt comes without asking.',
-  },
-  {
     author: 'Ossi Järveläinen',
     text: 'Nice place and the result is always good! Get in quickly without an appointment.',
   },
@@ -257,10 +253,6 @@ const reviewsFi = [
   {
     author: 'Lagavulin',
     text: 'Hyvänlaatuista jälkeä ja edullinen – mutta kohokohta oli ehdottomasti höpisevä Aaro-papukaija!',
-  },
-  {
-    author: 'Mika',
-    text: 'Ilman ajanvarausta, helppo mennä, hyvä palvelu. Ja kuitti tulee pyytämättä.',
   },
   {
     author: 'Ossi Järveläinen',
