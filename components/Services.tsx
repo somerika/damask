@@ -113,7 +113,6 @@ const content = {
       {
         title: 'Hair',
         services: [
-          { name: 'Hair Wash', price: '€10' },
           { name: 'Haircut', price: 'From €25' },
           { name: 'Style Change Cut', price: 'From €30' },
           { name: 'Hair Coloring', price: 'From €49' },
@@ -122,6 +121,7 @@ const content = {
           { name: 'Perm', price: 'From €89' },
           { name: 'Hair Tattoo', price: 'From €15' },
           { name: 'Children (under 12)', price: '€20' },
+          { name: 'Hair Wash', price: '€10' },
         ],
       },
       {
@@ -142,7 +142,7 @@ const content = {
       {
         title: 'Hair Removal',
         services: [
-          { name: 'Wax Hair Removal', price: 'From €15' },
+          { name: 'Wax Hair Removal', price: 'From €20' },
           { name: 'Thread Hair Removal', price: 'From €15' },
         ],
       },
@@ -162,8 +162,8 @@ const content = {
         {
           title: "Women's Color",
           services: [
-            { name: "Women's Hair Coloring", price: 'From €139' },
             { name: "Women's Coloring & Highlights", price: 'From €99' },
+            { name: "Women's Hair Coloring", price: 'From €139' },
           ],
         },
         {
@@ -186,7 +186,6 @@ const content = {
       {
         title: 'Hiukset',
         services: [
-          { name: 'Hiustenpesu', price: '€10' },
           { name: 'Hiustenleikkaus', price: 'Alkaen €25' },
           { name: 'Mallinmuutosleikkaus', price: 'Alkaen €30' },
           { name: 'Hiusten värjäys', price: 'Alkaen €49' },
@@ -195,6 +194,7 @@ const content = {
           { name: 'Permanentti', price: 'Alkaen €89' },
           { name: 'Hiustatuointi', price: 'Alkaen €15' },
           { name: 'Lasten hiustenleikkaus (alle 12v)', price: '€20' },
+          { name: 'Hiustenpesu', price: '€10' },
         ],
       },
       {
@@ -215,7 +215,7 @@ const content = {
       {
         title: 'Karvanpoisto',
         services: [
-          { name: 'Karvan poisto vahalla', price: 'Alkaen €15' },
+          { name: 'Karvan poisto vahalla', price: 'Alkaen €20' },
           { name: 'Karvan poisto langalla', price: 'Alkaen €15' },
         ],
       },
@@ -235,8 +235,8 @@ const content = {
         {
           title: 'Naisten Väri',
           services: [
-            { name: 'Naisten hiusten värjäys', price: 'Alkaen €139' },
             { name: 'Naisten hiusraidat', price: 'Alkaen €99' },
+            { name: 'Naisten hiusten värjäys', price: 'Alkaen €139' },
           ],
         },
         {
