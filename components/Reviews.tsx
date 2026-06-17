@@ -36,6 +36,18 @@ const reviewsEn = [
     text: 'My long hair was straightened in no time. I am very happy with the price, quality and speed.',
   },
   {
+    author: 'Pasi Päykkönen',
+    text: 'I have been a customer for over ten years. Friendly service, good workmanship and reasonable prices.',
+  },
+  {
+    author: 'Arto Rautio',
+    text: 'Always been happy with the service. Been coming here for over 5 years.',
+  },
+  {
+    author: 'Denis Noorlind',
+    text: "Always a good haircut, I've been coming here for a long time.",
+  },
+  {
     author: 'Niklas Tilli',
     text: 'Friendly and high-quality service, I have been a regular customer for several years.',
   },
@@ -133,6 +145,18 @@ const reviewsFi = [
   {
     author: 'Joona Kuuramaa',
     text: 'Pitkät hiukseni suoristettiin hetkessä. Olen erittäin tyytyväinen hintaan, laatuun ja nopeuteen.',
+  },
+  {
+    author: 'Pasi Päykkönen',
+    text: 'Olen ollut asiakkaana yli kymmenen vuotta. Ystävällinen palvelu, hyvä työnjälki ja kohtuullinen hintataso.',
+  },
+  {
+    author: 'Arto Rautio',
+    text: 'Aina ollut tyytyväinen palveluun. Käynyt täällä jo yli 5 vuotta.',
+  },
+  {
+    author: 'Denis Noorlind',
+    text: 'Hyvin leikataan aina – olen käynyt täällä jo pitkään.',
   },
   {
     author: 'Niklas Tilli',
