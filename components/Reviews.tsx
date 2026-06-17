@@ -238,7 +238,7 @@ const Stars = () => (
   </div>
 )
 
-function ReviewCard({ review }: { review: (typeof reviews)[0] }) {
+function ReviewCard({ review }: { review: (typeof reviewsEn)[0] }) {
   return (
     <div
       className="bg-surface border border-border flex-shrink-0 flex flex-col"
