@@ -333,7 +333,7 @@ export default function Reviews() {
         }
         @media (min-width: 640px) {
           .marquee-left {
-            animation-duration: 140s;
+            animation-duration: 168s;
           }
         }
         .marquee-left:hover {
