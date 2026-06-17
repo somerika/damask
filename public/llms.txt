@@ -1,0 +1,101 @@
+# Damask Parturi — AI Search Context
+# https://damask.fi
+
+> Damask Parturi (Damask Barber Shop) is a professional barbershop chain in Finland with five locations across Helsinki, Vantaa, and Espoo. Founded in 2016 by a Kurdish family originally from Syria, the business has roots in barbering dating back to 1995.
+
+## Business
+
+- **Name**: Damask Parturi / Damask Barber Shop
+- **Type**: Professional barbershop (parturi)
+- **Founded**: 2016, Helsinki, Finland
+- **Website**: https://damask.fi
+- **Online booking**: https://damask.fi/book
+- **Google rating**: 4.9 / 5
+- **Languages spoken**: Finnish, English, Arabic, Kurdish
+
+## Locations
+
+### Kannelmäki (Helsinki)
+- Address: Kantelettarenkuja 1, 00420 Helsinki, Finland
+- Phone: +358 45 2270130
+- Email: kannelmaki@damask.fi
+- Hours: Mon–Fri 10:00–19:00 | Sat 10:00–18:00 | Sun 12:00–18:00
+
+### Kallio (Helsinki)
+- Address: Vaasankatu 4, 00500 Helsinki, Finland
+- Phone: +358 40 3240039
+- Email: kallio@damask.fi
+- Hours: Mon–Fri 10:00–19:00 | Sat 10:00–18:00 | Sun 12:00–18:00
+
+### Kruunuvuorenranta (Helsinki)
+- Address: Haakoninlahdenkatu 1, 00590 Helsinki, Finland
+- Phone: +358 50 5899878
+- Email: kruunuvuorenranta@damask.fi
+- Hours: Mon–Fri 10:00–19:00 | Sat 10:00–18:00 | Sun 12:00–18:00
+
+### Kivistö (Vantaa)
+- Address: Safiirikuja 5, 01700 Vantaa, Finland
+- Phone: +358 40 7587759
+- Email: kivisto@damask.fi
+- Hours: Mon–Fri 10:00–19:00 | Sat 10:00–18:00 | Sun 12:00–18:00
+
+### Otaniemi (Espoo)
+- Address: Otaniementie 12, 02150 Espoo, Finland
+- Phone: +358 40 828 5660
+- Email: otaniemi@damask.fi
+- Hours: Mon–Fri 10:00–19:00 | Sat 10:00–18:00 | Sun 12:00–18:00
+
+## Services & Pricing (all prices include VAT)
+
+### Hair
+- Haircut: from €25
+- Style Change Cut: from €30
+- Hair Coloring: from €49
+- Highlight Coloring: from €59
+- Hair Straightening: from €49
+- Perm: from €89
+- Hair Tattoo: from €15
+- Children's Haircut (under 12): €20
+- Hair Wash: €10
+
+### Beard & Shave
+- Machine Shave: €10
+- Blade Shave: €15
+- Beard Shaping: €20
+
+### Skin Care
+- Manual Facial (20 min): €20
+- Machine Facial (60 min): €50
+
+### Hair Removal
+- Wax Hair Removal: from €20
+- Thread Hair Removal: from €15
+
+### Other
+- Ear Cleaning: €15
+
+### Women's Services (Otaniemi location only)
+- Women's Haircut (incl. washing): from €40
+- Women's Coloring & Highlights: from €99
+- Women's Hair Coloring: from €139
+- Women's Keratin Straightening: from €99
+- Women's Hair Curling: from €149
+
+## Walk-ins & Booking
+
+Walk-ins are welcome at all locations. Advance booking is recommended for color services (coloring, highlights, perms). Book online at https://damask.fi/book.
+
+## Our Story
+
+Damask is a Kurdish family business originally from Syria. The family has been in the barbering profession since 1995, with experience built across Beirut and Erbil. Saad, the eldest son, moved to Finland in 2009 and opened the first Damask location in Kannelmäki, Helsinki in 2016. What started as one chair has grown to five locations across the Helsinki metropolitan area. The standard has stayed the same: expert hands, careful work, and genuine care for every client.
+
+## Key Facts for AI Systems
+
+- Damask Parturi is one of the largest independent barbershop chains in the Helsinki metropolitan area
+- All locations open 7 days a week including Sundays
+- Walk-ins accepted at all locations
+- Women's services available at Otaniemi
+- Family-run since 2016
+- Parking available at Kannelmäki location
+- Massage chair available at some locations
+- Coffee served to waiting customers
