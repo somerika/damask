@@ -120,7 +120,7 @@ const reviewsFi = [
   },
   {
     author: 'Henri Sutinen',
-    text: 'Menimme sinne ex tempore sunnuntaina ensimmäistä kertaa – sain leikkauksen 8-vuotiaalle pojalleni ja itselleni. Kahvia oli tarjolla odotellessa. Leikkaus sujui hyvin ja nopeasti. Hinta oli kohtuullinen. Suosittelen ehdottomasti.',
+    text: 'Menimme sinne sunnuntaina ensimmäistä kertaa ennakkoon sopimatta – poikani (8 v.) ja minä saimme molemmat hiustenleikkauksen. Kahvia oli tarjolla odotellessa. Leikkaus sujui hyvin ja nopeasti. Hinta oli kohtuullinen. Suosittelen ehdottomasti.',
   },
   {
     author: 'shyar',
@@ -172,11 +172,11 @@ const reviewsFi = [
   },
   {
     author: 'Lauri Mattila',
-    text: 'Loistava asiakaspalvelu, mukava henkilökunta – hyvä olo kun hiukset laitetaan ammattimaisesti kuntoon.',
+    text: 'Loistava asiakaspalvelu, mukava henkilökunta – on hyvä olo, kun hiukset saa ammattimaisesti kuntoon.',
   },
   {
     author: 'Nikolai Laur',
-    text: 'Mukava ja kodikas paikka leikkauttaa hiukset ja siistittää parta samalla kertaa.',
+    text: 'Mukava ja kodikas paikka, jossa voi leikkauttaa hiukset ja siistittää parta samalla kertaa.',
   },
   {
     author: 'Noksuboy',
@@ -188,15 +188,15 @@ const reviewsFi = [
   },
   {
     author: 'Vesa Pöyhönen',
-    text: 'Kävin positiivisten arvostelujen innoittamana, ja ne olivat täysin ansaittuja. Vaikka annoin Memolle melko epämääräiset ohjeet hiuksilleni ja parralleni, hän ymmärsi täsmälleen mitä halusin ja toimitti upean lopputuloksen. Loistavaa palvelua, erinomainen tarkkuus yksityiskohdissa ja täydellisesti sopiva tyyli. Hinta-laatu-suhde on luultavasti paras koko kaupungissa.',
+    text: 'Kävin positiivisten arvostelujen innoittamana, ja ne olivat täysin ansaittuja. Vaikka annoin Memolle melko epämääräiset ohjeet hiuksilleni ja parralleni, hän ymmärsi täsmälleen mitä halusin ja lopputulos oli upea. Loistavaa palvelua, erinomainen tarkkuus yksityiskohdissa ja tyyli, joka sopi minulle täydellisesti. Hinta-laatu-suhde on luultavasti paras koko kaupungissa.',
   },
   {
     author: 'Hamid Alo',
-    text: 'Todella ammattimainen parturi ja erinomaista palvelua! Leikkaus oli juuri sellainen kuin halusin, ja tunnelma oli rento ja ystävällinen. Asiakastyytyväisyys on täällä etusijalla. Suosittelen lämpimästi kaikille, jotka etsivät laadukasta miestenparturiia. Tulen ehdottomasti takaisin!',
+    text: 'Todella ammattimainen parturi ja erinomaista palvelua! Leikkaus oli juuri sellainen kuin halusin, ja tunnelma oli rento ja ystävällinen. Asiakastyytyväisyys on täällä etusijalla. Suosittelen lämpimästi kaikille, jotka etsivät laadukasta miestenparturia. Tulen ehdottomasti takaisin!',
   },
   {
     author: 'Ville Arvola',
-    text: 'Todella taitava parturi ja odotukset ylittänyt leikkaus tekivät tästä ehdottoman PARHAAN PAIKAN Espoossa tulevaisuuden hiustenleikkauksille. Erittäin tarkat tulokset. Suosittelen ehdottomasti käymään kohtuullisten hintojen vuoksi.',
+    text: 'Todella taitava parturi ja odotukset ylittänyt leikkaus tekivät tästä ehdottomasti PARHAAN PAIKAN Espoossa hiustenleikkauksia ajatellen. Erittäin tarkat tulokset. Suosittelen ehdottomasti käymään – hinnat ovat enemmän kuin kohtuulliset.',
   },
   {
     author: 'Abdullh Osman',
@@ -212,7 +212,7 @@ const reviewsFi = [
   },
   {
     author: 'Timo Tervo',
-    text: 'Käynyt täällä useita vuosia, koska ajanvarauksen kanssa ei tarvitse vaivata päätään ja laatu on hyvää. Parkkipaikka on lähellä. Jos joutuu odottamaan hetken, papukaijan loru ja hierontatuoli auttavat ajan kulumisessa.',
+    text: 'Käynyt täällä useita vuosia, koska ajanvarauksen kanssa ei tarvitse vaivata päätään ja laatu on hyvää. Parkkipaikka on lähellä. Jos joutuu odottamaan hetken, papukaijan rupattelu ja hierontatuoli auttavat ajan kuluttamisessa.',
   },
   {
     author: 'Talaat Mukhlif',
