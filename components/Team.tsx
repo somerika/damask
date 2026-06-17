@@ -19,12 +19,14 @@ const barbers: Barber[] = [
       en: 'Owner · Kannelmäki, Kruunuvuorenranta',
       fi: 'Omistaja · Kannelmäki, Kruunuvuorenranta',
     },
-    photo: 'https://damask.fi/wp-content/uploads/2016/07/IMG_1072-1.jpg',
+    photo: '/saad.jpeg',
+    focalY: '28%',
   },
   {
     name: 'Hasan',
     role: { en: 'Manager · Kivistö', fi: 'Toimipistevastaava · Kivistö' },
-    photo: 'https://damask.fi/wp-content/uploads/2021/12/IMG_1068.jpg',
+    photo: '/hasan.jpeg',
+    focalY: '25%',
   },
   {
     name: 'Memo Ismail',
@@ -32,6 +34,8 @@ const barbers: Barber[] = [
       en: 'Marketing Manager · Kallio, Otaniemi',
       fi: 'Markkinointipäällikkö · Kallio, Otaniemi',
     },
+    photo: '/memo.jpeg',
+    focalY: '22%',
   },
 ]
 
