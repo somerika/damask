@@ -179,6 +179,7 @@ export default function StructuredData() {
         name: 'Damask Parturi Otaniemi',
         parentOrganization: { '@id': 'https://damask.fi/#organization' },
         url: 'https://damask.fi/locations',
+        foundingDate: '2023',
         priceRange: '€€',
         currenciesAccepted: 'EUR',
         telephone: '+358408285660',
