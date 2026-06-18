@@ -94,7 +94,12 @@ export default function Hero() {
             <p className="text-text/55 text-[0.9375rem] font-light leading-[1.7] max-w-[38ch] mb-4">
               {t.sub}
             </p>
-            <div className="flex items-center gap-2.5">
+            <a
+              href="https://maps.app.goo.gl/r5S3NgnZ9GYKx1zf8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2.5 no-underline"
+            >
               <div className="flex gap-0.5">
                 {[0, 1, 2, 3, 4].map((i) => (
                   <svg key={i} width="13" height="13" viewBox="0 0 12 12" fill="none">
@@ -108,7 +113,7 @@ export default function Hero() {
               <span className="text-text/70 text-[0.75rem] font-light tracking-[0.04em]">
                 4.9 · Google Reviews
               </span>
-            </div>
+            </a>
           </div>
 
           <div className="flex gap-3.5 flex-wrap">
