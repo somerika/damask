@@ -103,7 +103,14 @@ export default function Footer() {
           <p className="text-muted text-xs font-light">{t.copyright}</p>
           <div className="flex items-center gap-4">
             {pathname !== '/' && (
-              <p className="text-muted text-xs font-light">Powered by afmedia</p>
+              <a
+                href="https://afmedia.fi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted text-xs font-light no-underline hover:text-text transition-colors duration-200"
+              >
+                Powered by afmedia
+              </a>
             )}
             <p className="text-muted text-xs font-light">Helsinki · Vantaa · Espoo</p>
           </div>
