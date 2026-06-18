@@ -50,18 +50,15 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-12 pb-14 border-b border-border mb-8">
           <div>
-            <div className="flex items-center gap-[10px] mb-6">
+            <div className="mb-6">
               <Image
                 src="/logo.png"
                 alt="Damask"
-                width={28}
-                height={28}
+                width={72}
+                height={72}
                 className="object-contain"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
-              <span className="font-display text-xl tracking-[0.18em] text-text font-bold">
-                DAMASK
-              </span>
             </div>
             <p className="text-muted text-sm leading-[1.8] max-w-[36ch] font-light">
               {t.description}
