@@ -3,6 +3,7 @@ import Nav from '@/components/Nav'
 import ServicesMarquee from '@/components/ServicesMarquee'
 import Services from '@/components/Services'
 import Reviews from '@/components/Reviews'
+import BookingCTA from '@/components/BookingCTA'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function ServicesPage() {
         <ServicesMarquee />
         <Services />
         <Reviews />
+        <BookingCTA />
       </main>
       <Footer />
     </div>
