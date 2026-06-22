@@ -1,20 +1,41 @@
-const items = [
-  'Haircut',
-  'Beard Shaping',
-  'Blade Shave',
-  'Machine Shave',
-  'Hair Coloring',
-  'Highlights',
-  'Hair Straightening',
-  'Hair Tattoo',
-  'Hand Facial',
-  'Machine Facial',
-  'Ear Cleaning',
-  'Wax Removal',
-]
+'use client'
+
+import { useLanguage } from '@/lib/language-context'
+
+const items = {
+  en: [
+    'Haircut',
+    'Beard Shaping',
+    'Blade Shave',
+    'Machine Shave',
+    'Hair Coloring',
+    'Highlights',
+    'Hair Straightening',
+    'Hair Tattoo',
+    'Hand Facial',
+    'Machine Facial',
+    'Ear Cleaning',
+    'Wax Removal',
+  ],
+  fi: [
+    'Hiustenleikkaus',
+    'Parran muotoilu',
+    'Teräajelu',
+    'Koneparranajo',
+    'Hiusten värjäys',
+    'Hiusraidat',
+    'Hiusten suoristus',
+    'Hiustatuointi',
+    'Manuaalinen kasvohoito',
+    'Laitteellinen kasvohoito',
+    'Korvanpuhdistus',
+    'Karvanpoisto vahalla',
+  ],
+}
 
 export default function ServicesMarquee() {
-  const doubled = [...items, ...items]
+  const { lang } = useLanguage()
+  const doubled = [...items[lang], ...items[lang]]
 
   return (
     <div className="border-t border-b border-border bg-bg overflow-hidden py-4">
