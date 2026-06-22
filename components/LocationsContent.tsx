@@ -2,7 +2,6 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import Link from 'next/link'
 import type { SanityLocation } from '@/lib/sanity/queries'
 import { useLanguage } from '@/lib/language-context'
 
@@ -12,14 +11,14 @@ const content = {
     h2: ['Five Locations.', 'One Standard.'],
     book: 'Book Now',
     bookHere: 'Book here →',
-    comingSoon: 'Coming soon',
+    callToBook: 'Call to book →',
   },
   fi: {
     eyebrow: 'Löydä meidät',
     h2: ['Viisi toimipistettä.', 'Sama laatutaso.'],
     book: 'Varaa aika',
     bookHere: 'Varaa tästä →',
-    comingSoon: 'Tulossa pian',
+    callToBook: 'Soita ja varaa →',
   },
 }
 
@@ -57,12 +56,6 @@ export default function LocationsContent({ locations }: { locations: SanityLocat
               {t.h2[1]}
             </h2>
           </div>
-          <Link
-            href="/book"
-            className="bg-accent text-bg px-8 py-3.5 text-[0.8125rem] tracking-[0.12em] uppercase font-medium no-underline"
-          >
-            {t.book}
-          </Link>
         </motion.div>
 
         {/* Location rows */}
@@ -103,7 +96,7 @@ export default function LocationsContent({ locations }: { locations: SanityLocat
               </div>
 
               <div>
-                {Object.values(loc.hours).map((h) => (
+                {[loc.hours.weekdays, loc.hours.saturday, loc.hours.sunday].map((h) => (
                   <p
                     key={h}
                     className="text-muted text-[0.8125rem] tabular-nums font-light leading-[1.7]"
@@ -113,20 +106,13 @@ export default function LocationsContent({ locations }: { locations: SanityLocat
                 ))}
               </div>
 
-              {loc.timmaUrl ? (
-                <a
-                  href={loc.timmaUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block self-start justify-self-start bg-accent text-bg px-6 py-[0.625rem] text-xs tracking-[0.1em] uppercase no-underline whitespace-nowrap font-medium transition-opacity duration-200 hover:opacity-80"
-                >
-                  {t.bookHere}
-                </a>
-              ) : (
-                <span className="self-start justify-self-start text-[#3a3530] text-xs tracking-[0.1em] uppercase whitespace-nowrap">
-                  {t.comingSoon}
-                </span>
-              )}
+              <a
+                href={loc.timmaUrl ?? `tel:${loc.phone}`}
+                {...(loc.timmaUrl ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                className="inline-block self-start justify-self-start bg-accent text-bg px-6 py-[0.625rem] text-xs tracking-[0.1em] uppercase no-underline whitespace-nowrap font-medium transition-opacity duration-200 hover:opacity-80"
+              >
+                {loc.timmaUrl ? t.bookHere : t.callToBook}
+              </a>
             </motion.div>
           ))}
         </div>

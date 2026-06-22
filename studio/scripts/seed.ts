@@ -1,4 +1,4 @@
-import {getCliClient} from 'sanity/cli'
+import { getCliClient } from 'sanity/cli'
 
 // Run with:  npx sanity exec scripts/seed.ts --with-user-token
 // Idempotent: uses fixed _ids + createOrReplace, so re-running overwrites
@@ -6,8 +6,8 @@ import {getCliClient} from 'sanity/cli'
 
 const client = getCliClient()
 
-type Locale = {en: string; fi: string}
-const L = (en: string, fi: string): Locale => ({en, fi})
+type Locale = { en: string; fi: string }
+const L = (en: string, fi: string): Locale => ({ en, fi })
 
 let keyCounter = 0
 const key = () => `k${(keyCounter++).toString(36)}${Math.random().toString(36).slice(2, 7)}`
@@ -26,25 +26,65 @@ const category = (title: Locale, services: ReturnType<typeof item>[]) => ({
   services,
 })
 
-const HOURS = {weekdays: 'Mon–Fri 10–19', saturday: 'Sat 10–18', sunday: 'Sun 12–18'}
+const HOURS = { weekdays: 'Mon–Fri 10–19', saturday: 'Sat 10–18', sunday: 'Sun 12–18' }
 
 const locations = [
-  {slug: 'kruunuvuorenranta', name: 'Kruunuvuorenranta', address: 'Haakoninlahdenkatu 1', city: '00590 Helsinki', phone: '+358 50 5899878', email: 'kruunuvuorenranta@damask.fi', timmaUrl: 'https://varaa.timma.fi/damaskparturikuruununvuorenranta'},
-  {slug: 'kallio', name: 'Kallio', address: 'Vaasankatu 4', city: '00500 Helsinki', phone: '+358 40 3240039', email: 'kallio@damask.fi', timmaUrl: 'https://varaa.timma.fi/damaskkallio'},
-  {slug: 'kannelmaki', name: 'Kannelmäki', address: 'Kantelettarenkuja 1', city: '00420 Helsinki', phone: '+358 45 2270130', email: 'kannelmaki@damask.fi', timmaUrl: 'https://varaa.timma.fi/damaskgroupoy'},
-  {slug: 'kivisto', name: 'Kivistö', address: 'Safirikuja 3', city: '01700 Vantaa', phone: '+358 40 7587759', email: 'kivisto@damask.fi', timmaUrl: null},
-  {slug: 'otaniemi', name: 'Otaniemi', address: 'Otaniementie 12', city: '02150 Espoo', phone: '+358 40 828 5660', email: 'otaniemi@damask.fi', timmaUrl: 'https://varaa.timma.fi/damaskotaniemi'},
+  {
+    slug: 'kruunuvuorenranta',
+    name: 'Kruunuvuorenranta',
+    address: 'Haakoninlahdenkatu 1',
+    city: '00590 Helsinki',
+    phone: '+358 50 5899878',
+    email: 'kruunuvuorenranta@damask.fi',
+    timmaUrl: 'https://varaa.timma.fi/damaskparturikuruununvuorenranta',
+  },
+  {
+    slug: 'kallio',
+    name: 'Kallio',
+    address: 'Vaasankatu 4',
+    city: '00500 Helsinki',
+    phone: '+358 40 3240039',
+    email: 'kallio@damask.fi',
+    timmaUrl: 'https://varaa.timma.fi/damaskkallio',
+  },
+  {
+    slug: 'kannelmaki',
+    name: 'Kannelmäki',
+    address: 'Kantelettarenkuja 1',
+    city: '00420 Helsinki',
+    phone: '+358 45 2270130',
+    email: 'kannelmaki@damask.fi',
+    timmaUrl: 'https://varaa.timma.fi/damaskgroupoy',
+  },
+  {
+    slug: 'kivisto',
+    name: 'Kivistö',
+    address: 'Safirikuja 3',
+    city: '01700 Vantaa',
+    phone: '+358 40 7587759',
+    email: 'kivisto@damask.fi',
+    timmaUrl: null,
+  },
+  {
+    slug: 'otaniemi',
+    name: 'Otaniemi',
+    address: 'Otaniementie 12',
+    city: '02150 Espoo',
+    phone: '+358 40 828 5660',
+    email: 'otaniemi@damask.fi',
+    timmaUrl: 'https://varaa.timma.fi/damaskotaniemi',
+  },
 ].map((l, i) => ({
   _id: `location-${l.slug}`,
   _type: 'location',
   name: l.name,
-  slug: {_type: 'slug', current: l.slug},
+  slug: { _type: 'slug', current: l.slug },
   address: l.address,
   city: l.city,
   phone: l.phone,
   email: l.email,
-  hours: {...HOURS},
-  ...(l.timmaUrl ? {timmaUrl: l.timmaUrl} : {}),
+  hours: { ...HOURS },
+  ...(l.timmaUrl ? { timmaUrl: l.timmaUrl } : {}),
   order: i + 1,
 }))
 
@@ -55,7 +95,7 @@ const servicesPage = {
   heading: L('Services &\nPricing.', 'Palvelut &\nHinnasto.'),
   subtitle: L(
     'All prices include VAT. Walk-ins welcome — booking recommended for color services.',
-    'Kaikki hinnat sisältävät ALV:n. Tervetuloa myös ilman ajanvarausta — väripalveluihin ajanvaraus on suositeltava.',
+    'Kaikki hinnat sisältävät ALV:n. Tervetuloa myös ilman ajanvarausta — väripalveluihin ajanvaraus on suositeltava.'
   ),
   bookLabel: L('Book Now', 'Varaa aika'),
   categories: [
@@ -83,24 +123,31 @@ const servicesPage = {
       item(L('Wax Hair Removal', 'Karvan poisto vahalla'), L('From €20', 'Alkaen €20')),
       item(L('Thread Hair Removal', 'Karvan poisto langalla'), L('From €15', 'Alkaen €15')),
     ]),
-    category(L('Other', 'Muut'), [
-      item(L('Ear Cleaning', 'Korvanpuhdistus'), L('€15', '€15')),
-    ]),
+    category(L('Other', 'Muut'), [item(L('Ear Cleaning', 'Korvanpuhdistus'), L('€15', '€15'))]),
   ],
   womens: {
     eyebrow: L("Women's Services", 'Naisten Palvelut'),
     note: L('Available at Otaniemi location only', 'Saatavilla vain Otaniemen toimipisteessä'),
     categories: [
       category(L("Women's Haircuts", 'Naisten Hiustenleikkaukset'), [
-        item(L("Women's Haircut (incl. washing)", 'Kampaamoleikkaus (sis. pesu)'), L('From €40', 'Alkaen €40')),
+        item(
+          L("Women's Haircut (incl. washing)", 'Kampaamoleikkaus (sis. pesu)'),
+          L('From €40', 'Alkaen €40')
+        ),
       ]),
       category(L("Women's Color", 'Naisten Väri'), [
         item(L("Women's Coloring & Highlights", 'Naisten hiusraidat'), L('From €99', 'Alkaen €99')),
         item(L("Women's Hair Coloring", 'Naisten hiusten värjäys'), L('From €139', 'Alkaen €139')),
       ]),
       category(L("Women's Treatments", 'Naisten Hoidot'), [
-        item(L("Women's Keratin Straightening", 'Naisten hiusten suoristus'), L('From €99', 'Alkaen €99')),
-        item(L("Women's Hair Curling", 'Naisten hiusten kihartaminen'), L('From €149', 'Alkaen €149')),
+        item(
+          L("Women's Keratin Straightening", 'Naisten hiusten suoristus'),
+          L('From €99', 'Alkaen €99')
+        ),
+        item(
+          L("Women's Hair Curling", 'Naisten hiusten kihartaminen'),
+          L('From €149', 'Alkaen €149')
+        ),
       ]),
     ],
   },
@@ -118,5 +165,5 @@ run().then(
   (err) => {
     console.error(err)
     process.exit(1)
-  },
+  }
 )

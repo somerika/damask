@@ -12,6 +12,7 @@ const content = {
     description:
       'Select the Damask location nearest to you. Each button opens our booking system — pick your barber, date, and service.',
     bookAt: (name: string) => `Book at ${name}`,
+    callAt: (name: string) => `Call ${name}`,
     back: '← Back',
     callNote: 'Prefer to call? All locations are reachable by phone during opening hours.',
   },
@@ -21,6 +22,7 @@ const content = {
     description:
       'Valitse lähin Damask-toimipiste. Jokainen nappi avaa varausjärjestelmämme – valitse parturisi, päivämäärä ja palvelu.',
     bookAt: (name: string) => `Varaa aika – ${name}`,
+    callAt: (name: string) => `Soita – ${name}`,
     back: '← Takaisin',
     callNote:
       'Haluatko soittaa? Kaikki toimipisteet ovat tavoitettavissa puhelimitse aukioloaikoina.',
@@ -102,7 +104,7 @@ export default function BookContent({ locations }: { locations: SanityLocation[]
               </div>
 
               <div>
-                {Object.values(loc.hours).map((h) => (
+                {[loc.hours.weekdays, loc.hours.saturday, loc.hours.sunday].map((h) => (
                   <p
                     key={h}
                     className="text-muted text-[0.8125rem] font-light leading-[1.7] tabular-nums"
@@ -113,12 +115,11 @@ export default function BookContent({ locations }: { locations: SanityLocation[]
               </div>
 
               <a
-                href={loc.timmaUrl ?? undefined}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={loc.timmaUrl ?? `tel:${loc.phone}`}
+                {...(loc.timmaUrl ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="flex items-center justify-center w-full bg-accent text-bg px-8 py-4 text-[0.9375rem] tracking-[0.08em] uppercase font-medium no-underline whitespace-nowrap transition-opacity duration-200 hover:opacity-80"
               >
-                {t.bookAt(loc.name)}
+                {loc.timmaUrl ? t.bookAt(loc.name) : t.callAt(loc.name)}
               </a>
             </div>
           ))}

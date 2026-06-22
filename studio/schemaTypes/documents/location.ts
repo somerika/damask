@@ -1,5 +1,5 @@
-import {defineType, defineField} from 'sanity'
-import {PinIcon} from '@sanity/icons'
+import { defineType, defineField } from 'sanity'
+import { PinIcon } from '@sanity/icons'
 
 export const location = defineType({
   name: 'location',
@@ -18,7 +18,7 @@ export const location = defineType({
       title: 'ID / slug',
       type: 'slug',
       description: 'Stable identifier used in code and links. Avoid changing once set.',
-      options: {source: 'name', maxLength: 96},
+      options: { source: 'name', maxLength: 96 },
       validation: (r) => r.required(),
     }),
     defineField({
@@ -34,17 +34,17 @@ export const location = defineType({
       description: 'e.g. "00500 Helsinki"',
       validation: (r) => r.required(),
     }),
-    defineField({name: 'phone', title: 'Phone', type: 'string'}),
-    defineField({name: 'email', title: 'Email', type: 'string'}),
+    defineField({ name: 'phone', title: 'Phone', type: 'string' }),
+    defineField({ name: 'email', title: 'Email', type: 'string' }),
     defineField({
       name: 'hours',
       title: 'Opening hours',
       type: 'object',
-      options: {columns: 3},
+      options: { columns: 3 },
       fields: [
-        defineField({name: 'weekdays', title: 'Mon–Fri', type: 'string'}),
-        defineField({name: 'saturday', title: 'Saturday', type: 'string'}),
-        defineField({name: 'sunday', title: 'Sunday', type: 'string'}),
+        defineField({ name: 'weekdays', title: 'Mon–Fri', type: 'string' }),
+        defineField({ name: 'saturday', title: 'Saturday', type: 'string' }),
+        defineField({ name: 'sunday', title: 'Sunday', type: 'string' }),
       ],
     }),
     defineField({
@@ -64,10 +64,10 @@ export const location = defineType({
     {
       title: 'Display order',
       name: 'orderAsc',
-      by: [{field: 'order', direction: 'asc'}],
+      by: [{ field: 'order', direction: 'asc' }],
     },
   ],
   preview: {
-    select: {title: 'name', subtitle: 'city'},
+    select: { title: 'name', subtitle: 'city' },
   },
 })
